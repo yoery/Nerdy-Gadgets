@@ -19,37 +19,26 @@
 
     <center>
         <section style="background-color: RGB(173, 216, 230);">
-            <h2 style="color: black;">Aanbevolen Producten</h2>
+            <h2 style="color: black;">Alle Producten</h2>
                 <div style=" display: inline-block; margin: 20px; width: 200px; border: 1px solid black; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
                     <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px black;">Meer info</a>
                 </div>
-        </section>
-    </center>
 
-    <center>
-        <section style="background-color: RGB(173, 216, 230);">
-            <h2 style="color: black;">Aanbevolen Producten</h2>
                 <div style=" display: inline-block; margin: 20px; width: 200px; border: 1px solid black; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
                     <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px black;">Meer info</a>
                 </div>
-        </section>
-    </center>
 
-    <center>
-        <section style="background-color: RGB(173, 216, 230);">
-            <h2 style="color: black;">Aanbevolen Producten</h2>
                 <div style=" display: inline-block; margin: 20px; width: 200px; border: 1px solid black; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
                     <a href="product3.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px black;">Meer info</a>
-                </div>
         </section>
     </center>
 
