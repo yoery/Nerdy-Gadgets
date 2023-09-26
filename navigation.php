@@ -22,7 +22,7 @@
           </div>
         </div>
         <div onclick="location.href='#';">Winkelwagen</div>
-          <div>Regristreren</div>
+          <div>Registreren</div>
       </nav>
     </div>
   </center>
