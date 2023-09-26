@@ -6,7 +6,7 @@
     <title>Nerdy Gadgets</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="body">
+<body class="body" >
     <?php
     include 'navigation.php';
     ?>
