@@ -18,7 +18,8 @@
         <div class="dropdown">
           <div class="hover-button">Producten</div>
           <div class="dropdown-content">
-            <a href="#">Alles</a>
+            <a href="productpagina.php">Productpagina</a>
+            <a href="productoverzichtspagina.php">Productoverzicht</a>
           </div>
         </div>
         <div onclick="location.href='#';">Winkelwagen</div>
