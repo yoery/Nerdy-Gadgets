@@ -32,25 +32,25 @@
     <center>
         <section style="width: auto; height: 450px; background-color: RGB(173, 216, 230);">
         <h2 style="color: black; margin-bottom: 20px;">Winkelervaring bij Nerdy Gadgets</h2>
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; padding: 10px; background-color: white;">
+        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
             <img src="images/klantenrecensies.png" style="width: 75px; height: 75px;">
             <h3 style="color: black;">Klantrecensies</h3>
             <p style="color: black;">Ontdek wat onze klanten te zeggen hebben over hun Nerdy Gadgets-ervaring.</p>
         </div>
 
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; padding: 10px; background-color: white;">
+        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
             <img src="images/navigatie.png" style="width: 75px; height: 75px;">
             <h3 style="color: black;">Eenvoudige Navigatie</h3>
             <p style="color: black;">Vind gemakkelijk de gadgets die je zoekt met onze intuïtieve navigatie.</p>
         </div>
 
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; padding: 10px; background-color: white;">
+        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
             <img src="images/betaling.png" style="width: 75px; height: 75px;">
             <h3 style="color: black;">Veilige Betaling</h3>
             <p style="color: black;">Betaal met vertrouwen dankzij onze veilige betalingsmethoden.</p>
         </div>
 
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; padding: 10px; background-color: white;">
+        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
             <img src="images/snelle-levering.png" style="width: 75px; height: 75px;">
             <h3 style="color: black;">Snelle Levering</h3>
             <p style="color: black;">Ontvang je bestelling snel en efficiënt, zodat je snel kunt genieten van je gadgets.</p>
@@ -60,29 +60,29 @@
 
 
     <center>
-        <section style="background-color: RGB(173, 216, 230);">
+        <section style="width: auto; height: 450px; background-color: RGB(173, 216, 230);">
             <h2 style="color: black;">Alle Producten</h2>
-                <div style=" display: inline-block; margin: 20px; width: 200px; border: 1px solid black; padding: 10px; background-color: white;">
+                <div style=" display: inline-block; margin: 20px; width: 250px; height: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px black;">Meer info</a>
+                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; border: 1px solid black; border-radius: 10px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 200px; border: 1px solid black; padding: 10px; background-color: white;">
+                <div style=" display: inline-block; margin: 20px; width: 250px; height: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px black;">Meer info</a>
+                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; border: 1px solid black; border-radius: 10px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 200px; border: 1px solid black; padding: 10px; background-color: white;">
+                <div style=" display: inline-block; margin: 20px; width: 250px; height: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="product3.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px black;">Meer info</a>
+                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; border: 1px solid black; border-radius: 10px;">Meer info</a>
+                </div>
         </section>
     </center>
-
  </body>
 </html>
