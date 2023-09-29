@@ -38,7 +38,7 @@ CREATE TABLE `producten` (
 
 LOCK TABLES `producten` WRITE;
 /*!40000 ALTER TABLE `producten` DISABLE KEYS */;
-INSERT INTO `producten` VALUES ('Smartphone','Samsung','A53',337,7,120),('Smartphone','Apple','iPhone 15 Pro',1229,8,300);
+INSERT INTO `producten` VALUES ('Smartphone','Samsung','A53',337,7,120),('Smartphone','Apple','iPhone 15 Pro',1229,8,300),('Elektronica','Flipper','Zero',169,9,50),('Virtual Reality','Meta','Quest Pro',1199,8,80);
 /*!40000 ALTER TABLE `producten` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-29 11:54:48
+-- Dump completed on 2023-09-29 12:23:12
