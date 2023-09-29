@@ -19,8 +19,8 @@
     </section>
 
     <center>
-        <section style="width: 900px; height: 550px; background-color: RGB(173, 216, 230); margin-top: 50px; border-radius: 10px; border: 1px solid black;">
-        <img src="images/infopic.png" style="width: 400px; height: 200px; margin-top: 30px; border-radius: 10px;">
+        <section style="width: 800px; height: 600px; margin-top: 50px; border-radius: 10px; border: 1px solid black;">
+        <img src="images/infopic.png" style="width: 500px; height: 250px; margin-top: 30px; border-radius: 10px;">
         <h5 style="color: black; margin-top: 20px; width: 700px;">De missie van Nerdy Gadgets is om innovatieve technologieën en slimme gadgets toegankelijk te maken voor iedereen, ongeacht hun niveau van technische kennis. 
             Ons merk streeft ernaar om de nieuwsgierigheid en passie voor technologie te stimuleren, terwijl we de brug slaan tussen geeks en gadget-enthousiastelingen. 
             We geloven in de kracht van technologie om levens te verbeteren en streven ernaar om hoogwaardige, praktische, en soms speelse gadgets te bieden die het dagelijkse leven verrijken. 
@@ -30,7 +30,7 @@
     </center>
 
     <center>
-        <section style="width: auto; height: 450px; background-color: RGB(173, 216, 230);">
+        <section style="width: 900px; height: 650px; margin-top: 20px; border-radius: 10px; border: 1px solid black;">
         <h2 style="color: black; margin-bottom: 20px;">Winkelervaring bij Nerdy Gadgets</h2>
         <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
             <img src="images/klantenrecensies.png" style="width: 75px; height: 75px;">
@@ -60,23 +60,30 @@
 
 
     <center>
-        <section style="width: auto; height: 450px; background-color: RGB(173, 216, 230);">
-            <h2 style="color: black;">Alle Producten</h2>
-                <div style=" display: inline-block; margin: 20px; width: 250px; height: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
+    <section style="width: 900px; height: 900px; margin-top: 20px; border-radius: 10px; border: 1px solid black;">
+            <h2 style="color: black;">Voorgestelde Producten</h2>
+                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
                     <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; border: 1px solid black; border-radius: 10px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 250px; height: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
+                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
                     <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; border: 1px solid black; border-radius: 10px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 250px; height: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
+                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
+                    <img src="images/product1.png" style="width: 80px; height: 100px;">
+                    <h3 style="color: black;">Samsung A53</h3>
+                    <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
+                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; border: 1px solid black; border-radius: 10px;">Meer info</a>
+                </div>
+
+                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; border: 1px solid black; border-radius: 10px; padding: 10px; background-color: white;">
                     <img src="images/product1.png" style="width: 80px; height: 100px;">
                     <h3 style="color: black;">Samsung A53</h3>
                     <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
