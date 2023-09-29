@@ -30,21 +30,22 @@
     <center>
         <section style="background-color: RGB(173, 216, 230);">
             <h2 style="color: black;">Alle Producten</h2>
-                <div style=" display: inline-block; margin: 20px; width: 300px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product1.png" style="width: 260px; height: 100px; object-fit:contain">
-                    <h3 style="color: black;">Samsung A53</h3>
-                    <p style="color: black;">De A53 is een geadvanceerde telefoon geproduceerd door Samsung</p>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black;">Meer info</a>
-                </div>
-
-                <div style=" display: inline-block; margin: 20px; width: 300px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain" />
                     <h3 style="color: black;">Flipper Zero</h3>
                     <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
                     <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 300px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain" />
+                    <h3 style="color: black;">Flipper Zero</h3>
+                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black;">Meer info</a>
+                </div>
+
+
+                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <img src="images/product3.png" style="width: 260px; height: 100px; object-fit:contain">
                     <h3 style="color: black;">Meta Quest Pro</Prog></h3>
                     <p style="color: black;">De Meta Quest Pro is een mixed reality-headset ontwikkeld door Reality Labs, een divisie van Meta Platforms</p>
