@@ -31,25 +31,27 @@
         <section style="background-color: RGB(173, 216, 230);">
             <h2 style="color: black;">Alle Producten</h2>
             <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain" />
+                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
                     <h3 style="color: black;">Flipper Zero</h3>
                     <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black;">Meer info</a>
+                    <h2 style="color: black; padding: 5px;">€250,-</h2>
+                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
                 </div>
 
                 <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain" />
+                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit: contain; padding: 5px;" />
                     <h3 style="color: black;">Flipper Zero</h3>
                     <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black;">Meer info</a>
+                    <h2 style="color: black; padding: 5px;">€250,-</h2>
+                    <a href="product2.php" style="display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 10px;">Meer info</a>
                 </div>
 
-
                 <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; border: 0px solid black; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product3.png" style="width: 260px; height: 100px; object-fit:contain">
+                    <img src="images/product3.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;">
                     <h3 style="color: black;">Meta Quest Pro</Prog></h3>
-                    <p style="color: black;">De Meta Quest Pro is een mixed reality-headset ontwikkeld door Reality Labs, een divisie van Meta Platforms</p>
-                    <a href="product3.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black;">Meer info</a>
+                    <p style="color: black;">De Meta Quest Pro is een mixed reality-headset ontwikkeld door Reality Labs, een divisie van Meta Platforms.</p>
+                    <h2 style="color: black; padding: 5px;">€1.199,-</h2>
+                    <a href="product3.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
         </section>
     </center>
 
