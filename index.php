@@ -13,14 +13,14 @@
     ?>
     <section style="width: auto; height: 800; position: center;">
         <center>
-                <img src="images/nerdy_gadgets.png" style="width: 800px; height: 260px; margin-top: 50px;">   
+                <img src="images/nerdy_gadgets.png" style="width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;">   
                 <h4 style="color: black; margin-top: 10px;">Smart Tech for Nerdy Minds</h4>
         </center>
     </section>
 
     <center>
-        <section style="width: 900px; height: 550px; background-color: RGB(173, 216, 230); margin-top: 50px;">
-        <img src="images/infopic.png" style="width: 400px; height: 200px; margin-top: 30px;">
+        <section style="width: 900px; height: 550px; background-color: RGB(173, 216, 230); margin-top: 50px; border-radius: 10px; border: 1px solid black;">
+        <img src="images/infopic.png" style="width: 400px; height: 200px; margin-top: 30px; border-radius: 10px;">
         <h5 style="color: black; margin-top: 20px; width: 700px;">De missie van Nerdy Gadgets is om innovatieve technologieën en slimme gadgets toegankelijk te maken voor iedereen, ongeacht hun niveau van technische kennis. 
             Ons merk streeft ernaar om de nieuwsgierigheid en passie voor technologie te stimuleren, terwijl we de brug slaan tussen geeks en gadget-enthousiastelingen. 
             We geloven in de kracht van technologie om levens te verbeteren en streven ernaar om hoogwaardige, praktische, en soms speelse gadgets te bieden die het dagelijkse leven verrijken. 
