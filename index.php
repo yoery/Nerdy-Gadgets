@@ -91,5 +91,11 @@
                 </div>
         </section>
     </center>
+
+    <center>
+        <section style="width: 900px; height: 50px; margin-top: 50px;">
+            <h6 style="color: black;">@Nerdy gadget 2023</h6>
+        </section>
+    </center>
  </body>
 </html>
