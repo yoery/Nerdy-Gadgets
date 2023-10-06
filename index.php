@@ -60,34 +60,38 @@
 
 
     <center>
-    <section style="width: 900px; height: 900px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <section style="width: 900px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             <h2 style="color: black;">Voorgestelde Producten</h2>
-                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-                    <img src="images/product1.png" style="width: 80px; height: 100px;">
+            <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;">
+                    <img src="images/product1.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
                     <h3 style="color: black;">Samsung A53</h3>
-                    <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;">Meer info</a>
+                    <p style="color: black;">Samsung A53 is een mooie goeie telefoon gemaakt door Samung en gedesigned door Samsung</p>
+                    <h2 style="color: black; padding: 5px;">€250,-</h2>
+                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-                    <img src="images/product1.png" style="width: 80px; height: 100px;">
-                    <h3 style="color: black;">Samsung A53</h3>
-                    <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;">Meer info</a>
+                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
+                    <h3 style="color: black;">Flipper Zero</h3>
+                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <h2 style="color: black; padding: 5px;">€250,-</h2>
+                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-                    <img src="images/product1.png" style="width: 80px; height: 100px;">
-                    <h3 style="color: black;">Samsung A53</h3>
-                    <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;">Meer info</a>
+                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
+                    <h3 style="color: black;">Flipper Zero</h3>
+                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <h2 style="color: black; padding: 5px;">€250,-</h2>
+                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; width: 350px; height: 350px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-                    <img src="images/product1.png" style="width: 80px; height: 100px;">
-                    <h3 style="color: black;">Samsung A53</h3>
-                    <p style="color: black;">De A53 is een geadvanceerde telefoon door Samsung geproduceerd</p>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: lightgray; color: black; text-decoration: none; padding: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;">Meer info</a>
+                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
+                    <h3 style="color: black;">Flipper Zero</h3>
+                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <h2 style="color: black; padding: 5px;">€250,-</h2>
+                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
                 </div>
         </section>
     </center>
