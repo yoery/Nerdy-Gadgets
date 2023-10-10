@@ -35,12 +35,12 @@
         <h2 style="color: black;">Alle Producten</h2>
         <div>
             <button class="btn" onclick="filterProducts('alle')">Alle</button>
-            <button class="btn" onclick="filterProducts('flipper')">Flipper</button>
-            <button class="btn" onclick="filterProducts('meta')">Meta</button>
+            <button class="btn" onclick="filterProducts('hacking')">Hacking</button>
+            <button class="btn" onclick="filterProducts('vr')">Virtual Reality</button>
         </div>
         <section id="producten"
             style="width: 1300px; height: 450px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <div class="product flipper">
+            <div class="product hacking">
                 <div
                     style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <img src="images/product2copy.png"
@@ -54,7 +54,7 @@
                         info</a>
                 </div>
             </div>
-            <div class="product flipper">
+            <div class="product hacking">
                 <div
                     style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <img src="images/product2copy.png"
@@ -68,7 +68,7 @@
                         info</a>
                 </div>
             </div>
-            <div class="product meta">
+            <div class="product vr">
                 <div
                     style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <img src="images/product3.png"
