@@ -6,22 +6,53 @@
     <title>Nerdy Gadgets</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+
+        .section-logo {width: auto; height: 800; position: center;}
+        .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}
+        .h4-logo {color: black; margin-top: 10px;}
+
+        .section-info {width: 800px; height: 600px; margin-top: 50px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .img-info {width: 500px; height: 250px; margin-top: 30px; border-radius: 10px;}
+        .h5-info {color: black; margin-top: 20px; width: 700px;}
+
+        .section-ervaring {width: 900px; height: 650px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .h2-ervaring {color: black; margin-bottom: 20px;}
+        .div-ervaring {display: inline-block; margin: 20px; width: 350px; height: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;}
+        .img-ervaring {width: 75px; height: 75px;}
+        .h3-ervaring {color: black;}
+        .p-ervaring {color: black;}
+
+        .section-voorgesteld {width: 900px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .h2-titel-voorgesteld {color: black;}
+        .div-margin-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
+        .img-voorgesteld {width: 260px; height: 100px; object-fit:contain; padding: 5px;}
+        .h3-voorgesteld {color: black;}
+        .p-voorgesteld {color: black;}
+        .h2-voorgesteld {color: black; padding: 5px;}
+        .href-voorgesteld {display: block; text-align: center; background-color: #007bff; color: bl  ack; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px;}
+        .div-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+        .section-footer {width: 900px; height: 50px; margin-top: 50px;}
+        .h6-footer {color: black;}
+
+    </style>
 </head>
-<body class="body">
+<body>
     <?php
     include 'navigation.php';
     ?>
-    <section style="width: auto; height: 800; position: center;">
+    <section class="section-logo">
         <center>
-                <img src="images/nerdy_gadgets.png" style="width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;">   
-                <h4 style="color: black; margin-top: 10px;">Smart Tech for Nerdy Minds</h4>
+                <img src="images/nerdy_gadgets.png" class="img-logo">   
+                <h4 class="h4-logo">Smart Tech for Nerdy Minds</h4>
         </center>
     </section>
 
     <center>
-        <section style="width: 800px; height: 600px; margin-top: 50px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <img src="images/infopic.png" style="width: 500px; height: 250px; margin-top: 30px; border-radius: 10px;">
-        <h5 style="color: black; margin-top: 20px; width: 700px;">De missie van Nerdy Gadgets is om innovatieve technologieën en slimme gadgets toegankelijk te maken voor iedereen, ongeacht hun niveau van technische kennis. 
+        <section class="section-info">
+        <img src="images/infopic.png" class="img-info">
+        <h5 class="h5-info">De missie van Nerdy Gadgets is om innovatieve technologieën en slimme gadgets toegankelijk te maken voor iedereen, ongeacht hun niveau van technische kennis. 
             Ons merk streeft ernaar om de nieuwsgierigheid en passie voor technologie te stimuleren, terwijl we de brug slaan tussen geeks en gadget-enthousiastelingen. 
             We geloven in de kracht van technologie om levens te verbeteren en streven ernaar om hoogwaardige, praktische, en soms speelse gadgets te bieden die het dagelijkse leven verrijken. 
             Onze waarden omvatten innovatie, kwaliteit, klantgerichtheid en een gezonde dosis nerdiness in alles wat we doen. 
@@ -30,75 +61,75 @@
     </center>
 
     <center>
-        <section style="width: 900px; height: 650px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <h2 style="color: black; margin-bottom: 20px;">Winkelervaring bij Nerdy Gadgets</h2>
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-            <img src="images/klantenrecensies.png" style="width: 75px; height: 75px;">
-            <h3 style="color: black;">Klantrecensies</h3>
-            <p style="color: black;">Ontdek wat onze klanten te zeggen hebben over hun Nerdy Gadgets-ervaring.</p>
+        <section class="section-ervaring">
+        <h2 class="h2-ervaring">Winkelervaring bij Nerdy Gadgets</h2>
+        <div class="div-ervaring">
+            <img src="images/klantenrecensies.png" class="img-ervaring">
+            <h3 class="h3-ervaring">Klantrecensies</h3>
+            <p class="p-ervaring">Ontdek wat onze klanten te zeggen hebben over hun Nerdy Gadgets-ervaring.</p>
         </div>
 
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-            <img src="images/navigatie.png" style="width: 75px; height: 75px;">
-            <h3 style="color: black;">Eenvoudige Navigatie</h3>
-            <p style="color: black;">Vind gemakkelijk de gadgets die je zoekt met onze intuïtieve navigatie.</p>
+        <div class="div-ervaring">
+            <img src="images/navigatie.png" class="img-ervaring">
+            <h3 class="h3-ervaring">Eenvoudige Navigatie</h3>
+            <p class="p-ervaring">Vind gemakkelijk de gadgets die je zoekt met onze intuïtieve navigatie.</p>
         </div>
 
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-            <img src="images/betaling.png" style="width: 75px; height: 75px;">
-            <h3 style="color: black;">Veilige Betaling</h3>
-            <p style="color: black;">Betaal met vertrouwen dankzij onze veilige betalingsmethoden.</p>
+        <div class="div-ervaring">
+            <img src="images/betaling.png" class="img-ervaring">
+            <h3 class="h3-ervaring">Veilige Betaling</h3>
+            <p class="p-ervaring">Betaal met vertrouwen dankzij onze veilige betalingsmethoden.</p>
         </div>
 
-        <div style=" display: inline-block; margin: 20px; width: 350px; height: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px; padding: 10px; background-color: white;">
-            <img src="images/snelle-levering.png" style="width: 75px; height: 75px;">
-            <h3 style="color: black;">Snelle Levering</h3>
-            <p style="color: black;">Ontvang je bestelling snel en efficiënt, zodat je snel kunt genieten van je gadgets.</p>
+        <div class="div-ervaring">
+            <img src="images/snelle-levering.png" class="img-ervaring">
+            <h3 class="h3-ervaring">Snelle Levering</h3>
+            <p class="p-ervaring">Ontvang je bestelling snel en efficiënt, zodat je snel kunt genieten van je gadgets.</p>
         </div>
         </section>
     </center>
 
 
     <center>
-    <section style="width: 900px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <h2 style="color: black;">Voorgestelde Producten</h2>
-            <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;">
-                    <img src="images/product1.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
-                    <h3 style="color: black;">Samsung A53</h3>
-                    <p style="color: black;">Samsung A53 is een mooie goeie telefoon gemaakt door Samung en gedesigned door Samsung</p>
-                    <h2 style="color: black; padding: 5px;">€250,-</h2>
-                    <a href="Samsung-A53.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
+    <section class="section-voorgesteld">
+            <h2 class="h2-titel-voorgesteld">Voorgestelde Producten</h2>
+            <div class="div-margin-voorgesteld">
+                    <img src="images/product1.png" class="img-voorgesteld"/>
+                    <h3 class="h3-voorgesteld">Samsung A53</h3>
+                    <p class="p-voorgesteld">Samsung A53 is een mooie goeie telefoon gemaakt door Samung en gedesigned door Samsung</p>
+                    <h2 class="h2-voorgesteld">€250,-</h2>
+                    <a href="Samsung-A53.php" class="href-voorgesteld">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
-                    <h3 style="color: black;">Flipper Zero</h3>
-                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <h2 style="color: black; padding: 5px;">€250,-</h2>
-                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
+                <div class="div-voorgesteld">
+                    <img src="images/product2copy.png" class="img-voorgesteld"/>
+                    <h3 class="h3-voorgesteld">Flipper Zero</h3>
+                    <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <h2 class="h2-voorgesteld">€250,-</h2>
+                    <a href="product2.php" class="hrefp-voorgesteld">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
-                    <h3 style="color: black;">Flipper Zero</h3>
-                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <h2 style="color: black; padding: 5px;">€250,-</h2>
-                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
+                <div class="div-voorgesteld">
+                    <img src="images/product2copy.png" class="img-voorgesteld"/>
+                    <h3 class="h3-voorgesteld">Flipper Zero</h3>
+                    <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <h2 class="h2-voorgesteld">€250,-</h2>
+                    <a href="product2.php" class="hrefp-voorgesteld">Meer info</a>
                 </div>
 
-                <div style=" display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img src="images/product2copy.png" style="width: 260px; height: 100px; object-fit:contain; padding: 5px;"/>
-                    <h3 style="color: black;">Flipper Zero</h3>
-                    <p style="color: black;">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <h2 style="color: black; padding: 5px;">€250,-</h2>
-                    <a href="product2.php" style="  display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; black; margin-top: 1px;">Meer info</a>
+                <div class="div-voorgesteld">
+                    <img src="images/product2copy.png" class="img-voorgesteld"/>
+                    <h3 class="h3-voorgesteld">Flipper Zero</h3>
+                    <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
+                    <h2 class="h2-voorgesteld">€250,-</h2>
+                    <a href="product2.php" class="hrefp-voorgesteld">Meer info</a>
                 </div>
         </section>
     </center>
 
     <center>
-        <section style="width: 900px; height: 50px; margin-top: 50px;">
-            <h6 style="color: black;">@Nerdy gadget 2023</h6>
+        <section class="section-footer">
+            <h6 class="h6-footer">@Nerdy gadget 2023</h6>
         </section>
     </center>
  </body>
