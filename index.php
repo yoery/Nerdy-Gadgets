@@ -30,7 +30,7 @@
         .h3-voorgesteld {color: black;}
         .p-voorgesteld {color: black;}
         .h2-voorgesteld {color: black; padding: 5px;}
-        .href-voorgesteld {display: block; text-align: center; background-color: #007bff; color: bl  ack; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px;}
+        .href-voorgesteld {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px;}
         .div-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
         .section-footer {width: 900px; height: 50px; margin-top: 50px;}
@@ -106,7 +106,7 @@
                     <h3 class="h3-voorgesteld">Flipper Zero</h3>
                     <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
                     <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product2.php" class="hrefp-voorgesteld">Meer info</a>
+                    <a href="product2.php" class="href-voorgesteld">Meer info</a>
                 </div>
 
                 <div class="div-voorgesteld">
@@ -114,7 +114,7 @@
                     <h3 class="h3-voorgesteld">Flipper Zero</h3>
                     <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
                     <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product2.php" class="hrefp-voorgesteld">Meer info</a>
+                    <a href="product2.php" class="href-voorgesteld">Meer info</a>
                 </div>
 
                 <div class="div-voorgesteld">
@@ -122,7 +122,7 @@
                     <h3 class="h3-voorgesteld">Flipper Zero</h3>
                     <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
                     <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product2.php" class="hrefp-voorgesteld">Meer info</a>
+                    <a href="product2.php" class="href-voorgesteld">Meer info</a>
                 </div>
         </section>
     </center>

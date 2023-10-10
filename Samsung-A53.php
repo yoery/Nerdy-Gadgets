@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung A53</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section-logo {width: auto; height: 800; position: center;}
+        .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}
+        .h4-logo {color: black; margin-top: 10px;}
+    </style>
 </head>
-<body class="body">
+<body>
     <?php
     include 'navigation.php';
     ?>
-    <section style="width: 100; height: 700; position: center;">
+    <section class="section-logo">
         <center>
-                <img src="images/nerdy_gadgets.png" style="width: 450px; height: 100px; margin-top: 30px;">
-                <h4 style="color: black; margin-top: 10px;">Smart Tech for Nerdy Minds</h4>
+                <img src="images/nerdy_gadgets.png" class="img-logo">
+                <h4 class="h4-logo">Smart Tech for Nerdy Minds</h4>
         </center>
     </section>
     <center>
