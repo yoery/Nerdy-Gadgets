@@ -98,6 +98,7 @@
                 }
             });
         }
+        filterProducts('alle');
     </script>
 </body>
 
