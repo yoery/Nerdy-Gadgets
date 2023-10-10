@@ -21,7 +21,7 @@
             <a href="productoverzichtspagina.php">Productoverzicht</a>
           </div>
         </div>
-        <div onclick="location.href='#';">Winkelwagen</div>
+        <div onclick="location.href='winkelwagen.php';">Winkelwagen</div>
           <div>Registreren</div>
       </nav>
     </div>
