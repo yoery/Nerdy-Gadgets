@@ -31,6 +31,39 @@
                 De grote 5.000mAh-batterij gaat dagenlang mee, zodat je genoeg tijd hebt om prachtige beelden vast te leggen met het krachtige camerasysteem dat over optische beeldstabilisatie beschikt.</h5>
         </section>
     </center>
+    
+    <section>
+        <div class="samsung-container">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/samsung1.png">
+                <div class="text">Caption 1</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/samsung%20side2.png">
+                <div class="text">Caption 2</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/samsung%20side1.png">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(+1)"></a>
+        </div>
+        <br>
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
     <center>
         <section>
             <h2 style="color: black; margin-bottom: 20px;">Samsung A53 Klantrecensies</h2>
