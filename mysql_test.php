@@ -15,7 +15,7 @@ $mysqli = new mysqli($servername, $username, $password, $database) or die("Unabl
 mysqli_select_db($mysqli, $database) or die("Could not open the database '$database'");
 $result = mysqli_query($mysqli,"SELECT * FROM producten");
 while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-    printf("ID: %s  Name: %s <br>", $row[0], $row[1]);
+    printf("Categorie: %s  Merk: %s Productnaam: %s Prijs: %d Klantbeoordeling: %d Inventaris: %d <br>", $row[0], $row[1], $row[2], $row[3], $row[4], $row[5]);
 }
 ?>
 
