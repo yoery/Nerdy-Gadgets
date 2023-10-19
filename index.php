@@ -98,7 +98,7 @@
                     <h3 class="h3-voorgesteld">Samsung A53</h3>
                     <p class="p-voorgesteld">Samsung A53 is een mooie goeie telefoon gemaakt door Samung en gedesigned door Samsung</p>
                     <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="Samsung-A53.php" class="href-voorgesteld">Meer info</a>
+                    <a href="product3.php" class="href-voorgesteld">Meer info</a>
                 </div>
 
                 <div class="div-voorgesteld">

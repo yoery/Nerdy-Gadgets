@@ -9,15 +9,21 @@
         .section-logo {width: auto; height: 800; position: center;}
         .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}
         .h4-logo {color: black; margin-top: 10px;}
-        .container {color: black;}
+
         .section-product {width: 1100px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .container {color: black;}
         .product-container {width: 600px; margin: 0 auto; color: black;}
-        .product-image {float: left; height: 360px; width: 380px;}
-        .product-details {float: left; width: 300px; color: black;}
-        .product-reviews {clear: both; margin-top: 20px; color: black;}
-        .section-reviews {width: 1100px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-        .review-author {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .product-image {float: left; height: 450px; width: 380px; margin-top: 30px;}
+        .product-details {float: right; color: black; width: 900px;}
+        .h2-product {color: black; float: both; padding: 150px; display: flex; flex-direction: column; align-items: center;}
+        .href-product {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; width: 200px;}
+
+        .section-reviews {width: 1300px; height: 650px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: center;}
+        .product-reviews {margin-top: 20px; color: black;}
+        .review-author {display: inline-block; margin: 20px; height: 250px; width: 550px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
         .review-content {float: left; width:  400px; color: black;}
+        .avatar {vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;}
+        
         .section-voorgesteld {width: 1200px; height: 450px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
         .h2-titel-voorgesteld {color: black;}
         .div-margin-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
@@ -27,6 +33,7 @@
         .h2-voorgesteld {color: black; padding: 5px;}
         .href-voorgesteld {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px;}
         .div-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        
         .section-gallery {width: 1350px; height: 450px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
         .container {width: 90%; padding: 20px;}
         .colum {float: left; width: 25%;}
@@ -38,8 +45,12 @@
         .box img {display: block; width: 300px; height: 350px; border-radius: 5px;}
         .box:hover {transform: scale(1.3); z-index: 2;}
         .h1-gallery {color: black;}
+        
         .section-winkelwagen {width: 1200px; height: 450px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
         .h2-titel-winkelwagen {color: black;}
+        
+        .section-footer {width: 900px; height: 50px; margin-top: 50px;}
+        .h6-footer {color: black;}
     </style>
 
 </head>
@@ -57,13 +68,29 @@
     <center>
     <section class="section-product">
     <div class="container">
-    <h1>Samsung Galaxy A53 128GB Zwart 5G</h1>
-    <div class="product-info">
-      <div class="product-image">
-        <img src="images/product1.png" style="width: 300px; height: 350px;">  
+      <h1>Samsung Galaxy A53 128GB Zwart 5G</h1>
+      <div class="product-info">
+        <div class="product-image">
+          <img src="images/product1.png" style="width: 300px; height: 400px;">
+        </div>
+        <div class="h2-product">
+          <h2>€250,-</h2>
+          <a href="winkelwagen.php" class="href-product">Toevoegen aan winkelwagen</a>
       </div>
+
       <div class="product-details">
-        <p>De Samsung Galaxy A53 128GB Zwart 5G is een middenklasse smartphone met een grote batterij. Bij gemiddeld gebruik gaat de 5.000 mAh batterij ruim een dag mee. Met de apart verkrijgbare Samsung 25 watt snellader zit de batterij in iets meer dan een uur weer helemaal vol. Samsung levert geen oplader mee. De Samsung A53 is geschikt voor gemiddeld gebruik. Je schakelt soepel tussen apps als Instagram, YouTube en lichte spellen als Wordfeud. Op het 6,5 inch full hd scherm zie je veel details. De Samsung A53 heeft achterop 3 camera's en een dieptesensor die diepte meet. Hierdoor krijg je een scherptediepte effect bij portretfoto's. De standaard camera heeft optische beeldstabilisatie. Hierdoor zijn je foto's minder snel bewogen en dus scherper. Je bewaart je foto's samen met al je apps op het 128 GB opslaggeheugen. Dit breid je eventueel uit met een geheugenkaart van maximaal 1 TB.</p>
+        <h5>De Samsung Galaxy A53 128GB Zwart 5G is een middenklasse smartphone met een grote batterij.
+           Bij gemiddeld gebruik gaat de 5.000 mAh batterij ruim een dag mee. Met de apart verkrijgbare Samsung 25 watt snellader zit de batterij in iets meer dan een uur weer helemaal vol.
+           Samsung levert geen oplader mee. De Samsung A53 is geschikt voor gemiddeld gebruik. 
+           Je schakelt soepel tussen apps als Instagram, YouTube en lichte spellen als Wordfeud. 
+           Op het 6,5 inch full hd scherm zie je veel details. 
+           De Samsung A53 heeft achterop 3 camera's en een dieptesensor die diepte meet. 
+           Hierdoor krijg je een scherptediepte effect bij portretfoto's. 
+           De standaard camera heeft optische beeldstabilisatie. 
+           Hierdoor zijn je foto's minder snel bewogen en dus scherper. 
+           Je bewaart je foto's samen met al je apps op het 128 GB opslaggeheugen. 
+           Dit breid je eventueel uit met een geheugenkaart van maximaal 1 TB.
+</h5>
       </div>
     </div>
     </div>
@@ -169,11 +196,35 @@
     <div class="product-reviews">
       <h2>Reviews</h2>
           <div class="review-author">
-            <img src="reviewer-image.jpg" alt="Reviewer image">
+            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
+            <h4>John Doe</h4>
+            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
+          </div>
+
+          <div class="review-author">
+            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
+            <h4>John Doe</h4>
+            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
+          </div>
+
+          <div class="review-author">
+            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
+            <h4>John Doe</h4>
+            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
+          </div>
+
+          <div class="review-author">
+            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
             <h4>John Doe</h4>
             <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
           </div>
 </section>
 </center>
+
+<center>
+        <section class="section-footer">
+            <h6 class="h6-footer">@Nerdy gadget 2023</h6>
+        </section>
+    </center>
  </body>
 </html>
