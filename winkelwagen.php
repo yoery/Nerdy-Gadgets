@@ -11,7 +11,7 @@
         .h4-logo {color: black; margin-top: 10px;}
 
         .section-winkelwagen {width: auto; height: 800; position: center;}
-        .h1-winkelwagen-titel {color: black;}
+        .h2-winkelwagen-titel {color: black;}
     </style>
 </head>
 <body>
@@ -39,6 +39,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Voor elk product in de winkelwagen, herhaal de volgende rij -->
                     <tr>
                         <td>Productnaam 1</td>
                         <td>€20.00</td>
@@ -49,6 +50,7 @@
                         <td>€15.00</td>
                         <td><button class="btn btn-danger">Verwijderen</button></td>
                     </tr>
+                    <!-- Herhaal deze rij voor elk product -->
                 </tbody>
             </table>
             <div class="text-right">
