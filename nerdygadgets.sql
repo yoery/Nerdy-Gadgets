@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `nerdygadgets` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `nerdygadgets`;
 -- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: nerdygadgets
@@ -30,7 +28,8 @@ CREATE TABLE `producten` (
   `Productnaam` varchar(255) DEFAULT NULL,
   `Prijs` float DEFAULT NULL,
   `Klantbeoordeling` int(11) DEFAULT NULL,
-  `Inventaris` int(11) DEFAULT NULL
+  `Inventaris` int(11) DEFAULT NULL,
+  `Description` mediumtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -40,7 +39,7 @@ CREATE TABLE `producten` (
 
 LOCK TABLES `producten` WRITE;
 /*!40000 ALTER TABLE `producten` DISABLE KEYS */;
-INSERT INTO `producten` VALUES ('Smartphone','Samsung','A53',337,7,120),('Smartphone','Apple','iPhone 15 Pro',1229,8,300),('Hacking','Flipper','Zero',169,9,50),('Virtual Reality','Meta','Quest Pro',1199,8,80);
+INSERT INTO `producten` VALUES ('Smartphone','Samsung','A53',337,7,120,NULL),('Smartphone','Apple','iPhone 15 Pro',1229,8,300,NULL),('Hacking','Flipper','Zero',169,9,50,'Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.'),('Virtual Reality','Meta','Quest Pro',1199,8,80,NULL);
 /*!40000 ALTER TABLE `producten` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-13 11:55:17
+-- Dump completed on 2023-10-20 11:39:24
