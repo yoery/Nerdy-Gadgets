@@ -21,14 +21,7 @@
     $mysqli = new mysqli($servername, $username, $password, $database) or die("Kan niet verbinden '$servername'");
     mysqli_select_db($mysqli, $database) or die("Kon niet verbinden met '$database'");
     ?>
-    <section>
-        <div class="search_bar_location">
-            <form action="" class="search_bar">
-                <input type="text" placeholder="search anything" name="q">
-                <button type="submit"><img src="images/search.png"></button>
-            </form>
-        </div>
-    </section>
+
 
     <section style="width: auto; height: 800; position: center;">
         <center>
@@ -40,6 +33,9 @@
 
     <center>
         <h2 style="color: black;">Alle Producten</h2>
+        <section>
+
+        </section>
         <div>
             <button class="btn" onclick="filterProducts('alle')">Alle</button>
             <button class="btn" onclick="filterProducts('hacking')">Hacking</button>

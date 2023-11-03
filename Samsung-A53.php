@@ -53,8 +53,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="column">
-                        <img class="demo cursor" src="images/1715465.jpg" style="width:20%" onclick="currentSlide(1)" alt="Achterkant">
+                    <div class="column" style="color: #222222">
+                        <img class="demo cursor" src="images/1715465.jpg" style="width:20%"  onclick="currentSlide(1)" alt="Achterkant">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="images/1857490.jpg" style="width:20%" onclick="currentSlide(2)" alt="Voorkant">

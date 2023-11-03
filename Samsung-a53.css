@@ -73,6 +73,7 @@
 .column {
     float: left;
     width: 16.66%;
+    color: black;
 }
 
 .tab {
