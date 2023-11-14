@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productoverzicht</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="searchbar.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -33,9 +32,7 @@
 
     <center>
         <h2 style="color: black;">Alle Producten</h2>
-        <section>
 
-        </section>
         <div>
             <button class="btn" onclick="filterProducts('alle')">Alle</button>
             <button class="btn" onclick="filterProducts('hacking')">Hacking</button>
