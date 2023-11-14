@@ -18,7 +18,7 @@
     $username = "root";
     $password = "";
     $database = "nerdygadgets";
-    $mysqli = new mysqli($servername, $username, $password, $database) or die("Kan niet verbinden '$servername'");
+    $mysqli = mysqli_connect($servername, $username, $password, $database) or die("Kan niet verbinden '$servername'");
     mysqli_select_db($mysqli, $database) or die("Kon niet verbinden met '$database'");
     ?>
 
