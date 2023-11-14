@@ -22,14 +22,8 @@
                   <input type="submit">
               </form>
           </div>
-
-        <div class="dropdown">
-          <div class="hover-button">Producten</div>
-          <div class="dropdown-content">
-            <a href="productoverzichtspagina.php">Productoverzicht</a>
-          </div>
-        </div>
-        <div onclick="location.href='winkelwagen.php';">Winkelwagen</div>
+          <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
+          <div onclick="location.href='winkelwagen.php';">Winkelwagen</div>
           <div onclick="location.href='login.php'">Login</div>
       </nav>
     </div>
