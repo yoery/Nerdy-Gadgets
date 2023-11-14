@@ -8,11 +8,23 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+<center>
     <section>
-        <form>
-
+        <form method="post">
+            <h2>Registratie</h2><br>
+            <label>E-mail</label><br>
+            <input type="email" placeholder="email"><br>
+            <label>Gerbuikersnaam</label><br>
+            <input type="text" placeholder="Gerbuikersnaam"><br>
+            <label>Wachtwoord</label><br>
+            <input type="password" placeholder="wachtwoord"><br>
+            <label>Bevestig wachtwoord</label><br>
+            <input type="password" placeholder="wachtwoord"><br>
+            <input type="submit">
         </form>
     </section>
+</center>
+
 </body>
 
 
