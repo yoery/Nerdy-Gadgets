@@ -8,11 +8,20 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-<section>
-<h4>Login</h4>
-</section>
+<?php
+include 'navigation.php';
+?>
+<center>
+    <section >
+        <form method="post">
+            <h4>Login</h4><br>
+            <label>Gebruikersnaam</label><br>
+            <input type="text" placeholder="gebruikersnaam"><br>
+            <label>Wachtwoord</label><br>
+            <input type="password" placeholder="wachtwoord"><br>
+            <input type="submit" name="Bevestigen">
+        </form>
+    </section>
+</center>
 </body>
-
-
-
 </html>

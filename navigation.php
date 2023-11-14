@@ -30,7 +30,7 @@
           </div>
         </div>
         <div onclick="location.href='winkelwagen.php';">Winkelwagen</div>
-          <div>Registreren</div>
+          <div onclick="location.href='login.php'">Login</div>
       </nav>
     </div>
   </center>
