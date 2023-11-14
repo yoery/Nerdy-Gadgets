@@ -13,18 +13,17 @@
         <form method="post">
             <h2>Registratie</h2><br>
             <label>E-mail</label><br>
-            <input type="email" placeholder="email"><br>
-            <label>Gerbuikersnaam</label><br>
-            <input type="text" placeholder="Gerbuikersnaam"><br>
+            <input type="email" placeholder="email" required><br>
+            <label>Naam</label><br>
+            <input type="text" placeholder="voornaam" required><input type="text" placeholder="achternaam"><br>
             <label>Wachtwoord</label><br>
-            <input type="password" placeholder="wachtwoord"><br>
+            <input type="password" placeholder="wachtwoord" required><br>
             <label>Bevestig wachtwoord</label><br>
-            <input type="password" placeholder="wachtwoord"><br>
+            <input type="password" placeholder="wachtwoord" required><br>
             <input type="submit">
         </form>
     </section>
 </center>
-
 </body>
 
 
