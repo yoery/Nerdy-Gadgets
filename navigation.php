@@ -24,7 +24,7 @@
           </div>
           <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
           <div onclick="location.href='login.php'">Login</div>
-          <div onclick="location.href='winkelwagen.php';"><img src="images/Winkelwagen.png" style="height: 45px; object-fit:contain; border-radius: 5px;"></div>
+          <div2 onclick="location.href='winkelwagen.php';"><img src="images/Winkelwagen.png" style="height: 45px; object-fit:contain; border-radius: 5px;"></div2>
       </nav>
     </div>
   </center>
