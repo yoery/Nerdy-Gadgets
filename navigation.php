@@ -17,9 +17,9 @@
       <nav class="nav_bar">
         <div onclick="location.href='index.php';">Home</div>
           <div class="search_bar_location">
-              <form action="" class="search_bar">
+              <form action="">
                   <input type="text" placeholder="search" name="search">
-                  <input type="image" src="images/search.png" alt="submit">
+                  <input type="image" src="images/search.png" alt="submit" height="40px" width="40px" >
               </form>
           </div>
           <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
