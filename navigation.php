@@ -19,7 +19,7 @@
           <div class="search_bar_location">
               <form action="" class="search_bar">
                   <input type="text" placeholder="search" name="search">
-                  <input type="submit">
+                  <input type="image" src="images/search.png" alt="submit">
               </form>
           </div>
           <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
