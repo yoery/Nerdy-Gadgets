@@ -135,7 +135,7 @@ $conn->close();
         </form>
 
         <div class="register-link">
-            Not registered? <a href="register.php">Register here</a>
+            Not registered? <a href="Registration.php">Register here</a>
         </div>
     </main>
 </body>
