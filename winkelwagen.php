@@ -1,63 +1,59 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winkelwagen</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .section-logo {width: auto; height: 400; position: center;}
-        .img-logo {width: 500px; height: 160px; margin-top: 50px; border-radius: 10px;}
-        .h4-logo {color: black; margin-top: 10px;}
-
-        .section-winkelwagen {width: auto; height: 800; position: center;}
-        .h2-winkelwagen-titel {color: black;}
+        /* Add your styles here */
     </style>
 </head>
-<body>
-    <?php
-    include 'navigation.php';
-    ?>
-    <section class="section-logo">
-        <center>
-            <img src="images/nerdy_gadgets.png" class="img-logo">   
-            <h4 class="h4-logo">Smart Tech for Nerdy Minds</h4>
-        </center>
-    </section>
 
-    <section class="section-winkelwagen">
-        <center>
-            <h1 class="h1-winkelwagen-titel">Je winkelwagen</h1>
-        </center>
-        <div class="container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Prijs</th>
-                        <th>Verwijderen</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Voor elk product in de winkelwagen, herhaal de volgende rij -->
-                    <tr>
-                        <td>Productnaam 1</td>
-                        <td>€20.00</td>
-                        <td><button class="btn btn-danger">Verwijderen</button></td>
-                    </tr>
-                    <tr>
-                        <td>Productnaam 2</td>
-                        <td>€15.00</td>
-                        <td><button class="btn btn-danger">Verwijderen</button></td>
-                    </tr>
-                    <!-- Herhaal deze rij voor elk product -->
-                </tbody>
-            </table>
-            <div class="text-right">
-                <h4>Totaalprijs: €35.00</h4>
-                <a href="adresgegevens.php" class="btn btn-primary">Doorgaan naar betalen</a>
-            </div>
-        </div>
+<body>
+    <?php include 'navigation.php'; ?>
+
+    <section>
+        <h2>Winkelwagen</h2>
+
+        <section class="winkelwagen">
+            <?php
+            // Include your database connection script
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "nerdy_gadgets_start";
+            
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $database);
+            
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            // Retrieve cart items from the database
+            $sql = "SELECT product_name, product_price, quantity FROM shopping_cart";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<div class='cart-item'>";
+                    echo "<p>{$row['product_name']}</p>";
+                    echo "<p>Price: €{$row['product_price']}</p>";
+                    echo "<p>Quantity: {$row['quantity']}</p>";
+                    echo "<a href='remove_from_cart.php?name={$row['product_name']}'>Remove</a>";
+                    echo "</div>";
+                }
+            } else {
+                echo "<p>Geen items in de winkelwagen</p>";
+            }
+
+            $conn->close();
+            ?>
+        </section>
     </section>
 </body>
+
 </html>
