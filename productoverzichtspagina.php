@@ -178,7 +178,7 @@
                     //<img src="images/nerdy_gadgets.png" class="img-logo">
                     //echo "<img src=". $row["image"] . "' alt='Productafbeelding' class='img-producten'>";
                     //echo $imagePath . $row['image'] . '.jpg';
-                    echo "<img src='$imagePath/$imageName.jpg' alt='Productafbeelding' class='img-producten'>";
+                    echo "<img src='/Nerdy-Gadgets$imagePath/$imageName.jpg' alt='Productafbeelding' class='img-producten'>";
                     echo "<h2 class='h3-producten'>" . $shortName . " <a href='#'>...</a></h2>";
                     echo "<p class='p-producten'>" . $shortDescription . " <a href='#'>Lees meer</a></p>";
                     echo "<p class='h2-producten'>Price: €" . $row["price"] . "</p>";
