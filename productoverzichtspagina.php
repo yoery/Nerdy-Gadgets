@@ -40,7 +40,7 @@
 
         .product-info {
             width: 400px;
-            height: 350px;
+            height: 450px;
             margin: 20px;
             padding: 10px;
             border-radius: 10px;
