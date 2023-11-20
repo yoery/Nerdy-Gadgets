@@ -7,7 +7,48 @@
     <title>Winkelwagen</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .cart-item {
+            border: 1px solid #dee2e6;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #dc3545;
+            text-decoration: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .empty-cart-message {
+            color: #6c757d;
+        }
     </style>
 </head>
 
@@ -24,10 +65,10 @@
             $username = "root";
             $password = "";
             $database = "nerdy_gadgets_start";
-            
+
             // Create connection
             $conn = new mysqli($servername, $username, $password, $database);
-            
+
             // Check connection
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
@@ -37,6 +78,9 @@
             $sql = "SELECT product_name, product_price, quantity FROM shopping_cart";
             $result = $conn->query($sql);
 
+            // Initialize total price variable
+            $totalPrice = 0;
+
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo "<div class='cart-item'>";
@@ -45,9 +89,18 @@
                     echo "<p>Quantity: {$row['quantity']}</p>";
                     echo "<a href='remove_from_cart.php?name={$row['product_name']}'>Remove</a>";
                     echo "</div>";
+
+                    // Update total price
+                    $totalPrice += ($row['product_price'] * $row['quantity']);
                 }
+
+                // Display total price
+                echo "<p>Total Price: €{$totalPrice}</p>";
+
+                // Add "Verder" button
+                echo "<a href='credentials_page.php' class='btn btn-primary'>Verder</a>";
             } else {
-                echo "<p>Geen items in de winkelwagen</p>";
+                echo "<p class='empty-cart-message'>Geen items in de winkelwagen</p>";
             }
 
             $conn->close();

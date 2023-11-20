@@ -21,7 +21,9 @@ if (isset($_GET['name'])) {
     $stmt->bind_param("s", $name);
 
     if ($stmt->execute()) {
-        echo "Product removed from the cart!";
+        // Product removed from the cart, redirect back to the cart page
+        header("Location: winkelwagen.php");
+        exit(); // Make sure to exit after a header redirect
     } else {
         echo "Error: " . $stmt->error;
     }
