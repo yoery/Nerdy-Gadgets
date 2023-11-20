@@ -1,36 +1,45 @@
 <?php
-session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "nerdy_gadgets_start";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['Email'];
-    $password = $_POST['Wachtwoord'];
+$conn = new mysqli($servername, $username, $password, $database);
 
-    // Your database connection code here
-    require_once 'db_connection_pdo.php';
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    $sql = "SELECT * FROM user WHERE email = :email";
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':email', $email);
-    $stmt->execute();
+$message = '';
 
-    if ($stmt->rowCount() === 1) {
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        if (password_verify($password, $user['password'])) {
-            // Successful login
-            $_SESSION['loggedin'] = true;
-            $_SESSION['user_id'] = $user['AccountID'];
-            $_SESSION['user_email'] = $user['email'];
-            $_SESSION['user_name'] = $user['Naam'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
+    $sql = "SELECT * FROM user WHERE email = '$email'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        if (password_verify($password, $hashedPassword)) {
+            // Login successful
+            session_start();
+            $_SESSION['user_email'] = $email;
+            $_SESSION['first_name'] = $row['first_name']; // Assuming 'first_name' is the column name in your database
+            $_SESSION['login_time'] = time();
+            $_SESSION['expiration'] = 2 * 60 * 60;
+        
             header("Location: index.php");
             exit();
         } else {
-            $error = "Incorrect password. Please try again.";
+            $message = "Incorrect password!";
         }
-    } else {
-        $error = "User not found. Please check your email.";
     }
 }
+
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -38,86 +47,96 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            margin-top: 100px;
+
+        main {
+            text-align: center;
+        }
+
+        form {
             background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
         }
-        h1, label {
+
+        h2 {
+            margin-bottom: 20px;
             color: #333;
-            text-align: center;
         }
-        p.error {
-            color: red;
-            text-align: center;
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
+
         input {
             width: 100%;
-            padding: 10px;
+            padding: 8px;
+            margin-bottom: 16px;
             box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
-        .btn-primary {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
+
+        input[type="submit"] {
+            background-color: #3498db; /* Blue background */
+            color: white;
             cursor: pointer;
         }
-        .btn-primary:hover {
-            background-color: #0056b3;
+
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Darker blue on hover */
         }
+
+        .message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
         .register-link {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 10px;
         }
+
         .register-link a {
-            color: #007bff;
+            color: #3498db;
             text-decoration: none;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        
-        <?php if (isset($error)): ?>
-            <p class="error"><?php echo $error; ?></p>
-        <?php endif; ?>
+    <main>
+        <h2>Login</h2>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <form action="login.php" method="post">
-            <div class="form-group">
-                <label for="Email">Email:</label>
-                <input type="text" class="form-control" name="Email" id="Email" required>
-            </div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-            <div class="form-group">
-                <label for="Wachtwoord">Wachtwoord:</label>
-                <input type="password" class="form-control" name="Wachtwoord" id="Wachtwoord" required>
-            </div>
+            <input type="submit" value="Login">
 
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" id="login" value="Login">
-            </div>
+            <div class="message"><?php echo $message; ?></div>
         </form>
 
         <div class="register-link">
-            <p>Don't have an account? <a href="Registration.php">Register here</a>.</p>
+            Not registered? <a href="register.php">Register here</a>
         </div>
-    </div>
+    </main>
 </body>
 </html>
