@@ -19,7 +19,7 @@
           <div class="search_bar_location">
               <form action="">
                   <input type="text" placeholder="search" name="search">
-                  <input type="image" src="images/search.png" alt="submit" height="40px" width="40px" >
+                  <input type="image" src="images/search.png" alt="submit" height="40px" width="40px" style="filter: invert(1);">
               </form>
           </div>
           <div onclick="location.href='productoverzichtspagina.php';">Producten</div>

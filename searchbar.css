@@ -7,7 +7,7 @@ body {
 .search_bar_location {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex;
     width: 220px;
     height: 40px;
 }
