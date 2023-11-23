@@ -42,14 +42,13 @@ session_start();
             <div>
                 <nav class="nav_bar">
                     <div onclick="location.href='index.php';">Home</div>
-                    <div class="search_bar_location">
-                        <form action="">
-                            <input type="text" placeholder="search" name="search">
+                    <div>
+                        <form action="searchpage.php?searching=true" method="POST">
+                            <input type="text" name="searchcategory" value="">
                             <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
-                                style="filter: invert(1);">
+                                   style="filter: invert(1);">
                         </form>
                     </div>
-
                     <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
 
                     <?php
