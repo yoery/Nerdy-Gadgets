@@ -3,7 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product 3</title>
+    <?php
+    if (isset($_GET['product_name'])) {
+      $productName = $_GET['product_name'];
+
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $database = "nerdy_gadgets_start";
+      $conn = new mysqli($servername, $username, $password, $database);
+
+      if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+      }
+
+      $sql = "SELECT * FROM product WHERE name = '$productName'";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+              echo "<title>{$row['name']}</title>";
+          }
+      } else {
+          echo "Product not found.";
+      }
+
+      $conn->close();
+  } else {
+      echo "Product name not specified.";
+  }
+    ?>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .section-logo {width: auto; height: 800; position: center;}
@@ -14,7 +43,7 @@
         .container {color: black;}
         .product-container {width: 600px; margin: 0 auto; color: black; min-height: 850px;}
         .product-image {float: left; height: 450px; width: 380px; margin-top: 30px;}
-        .img-producten {max-width: 100%; height: auto;} /* Ensure the image doesn't exceed its container */
+        .img-producten {max-width: 100%; height: auto;}
         .product-details {float: right; color: black; width: 650px; text-align: center; margin-top: -110px;}
         .h2-product {color: black; float: both; padding: 150px; display: flex; flex-direction: column; align-items: center;}
         .href-product {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 10px; width: 200px;}
@@ -50,11 +79,10 @@
         <section class="section-product">
             <div class="container">
                 <?php
-                // Check if the product_name is set in the URL
+                
                 if (isset($_GET['product_name'])) {
                     $productName = $_GET['product_name'];
-
-                    // Fetch product details from the database using the product name
+            
                     $servername = "localhost";
                     $username = "root";
                     $password = "";
@@ -71,7 +99,7 @@
                     if ($result->num_rows > 0) {
                         $imagePath = '/Nerdy-Gadgets/product_images/';
                         while ($row = $result->fetch_assoc()) {
-                            // Display product information
+            
                             echo "<h1>{$row['name']}</h1>";
                             echo "<div class='product-info'>";
                             echo "<div class='product-image'>";
@@ -102,7 +130,6 @@
     <section class="producten">
     <h2 class="producten-h2">Gerelateerde Producten</h2>
     <?php
-    // Fetch related products from the database (you can modify this based on your database structure)
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -113,7 +140,6 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Example query to fetch related products (you may need to modify this based on your database structure)
     $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag') ORDER BY RAND() LIMIT 3";
     $resultRelated = $conn->query($sqlRelated);
 
@@ -148,7 +174,6 @@
             <a href='leave_review.php?product_name=<?php echo urlencode($productName); ?>' class='link-producten2'>Leave a Review</a>
 
             <?php
-            // Fetch reviews for the current product from the database
             $servername = "localhost";
             $username = "root";
             $password = "";
@@ -188,16 +213,13 @@
 
     <script>
         function addToCart(productName, productPrice) {
-            // Use prompt to ask for the quantity, default is 1
             var quantity = prompt("Enter quantity:", 1);
 
-            // Validate quantity
             if (quantity === null || isNaN(quantity) || quantity <= 0) {
                 alert("Invalid quantity.");
                 return;
             }
 
-            // Send the data to addToCart.php using AJAX
             const xhr = new XMLHttpRequest();
             xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
             xhr.onload = function () {

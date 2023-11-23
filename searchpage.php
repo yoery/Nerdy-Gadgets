@@ -4,9 +4,7 @@
 
 </head>
 <style>
-    table,th,tr{
-        border: 1px solid black;
-    }
+    table,th,tr{border: 1px solid black;}
 </style>
 
 <table style="max-width: 100%">

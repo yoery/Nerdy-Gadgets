@@ -133,16 +133,13 @@
         }
 
         function addToCart(productName, productPrice) {
-    // Use prompt to ask for the quantity, default is 1
     var quantity = prompt("Enter quantity:", 1);
 
-    // Validate quantity
     if (quantity === null || isNaN(quantity) || quantity <= 0) {
         alert("Invalid quantity.");
         return;
     }
-
-    // Send the data to addToCart.php using AJAX
+    
     const xhr = new XMLHttpRequest();
     xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
     xhr.onload = function () {
