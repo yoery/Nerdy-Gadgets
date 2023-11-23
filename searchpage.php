@@ -48,7 +48,7 @@
 
         $connection = mysqli_connect("localhost", "root", "", "nerdy_gadgets_start");
         $filtervalue = $_POST['searchcategory'];
-        $filterdata = "SELECT * FROM product WHERE CONCAT(name,description,price,image) LIKE '%$filtervalue%'";
+        $filterdata = "SELECT * FROM product WHERE lower(CONCAT(name,description,price,image)) LIKE LOWER('%$filtervalue%')";
         $filterdata_run = mysqli_query($connection, $filterdata);
         $imagePath = '/Nerdy-Gadgets/product_images/';
         if (mysqli_num_rows($filterdata_run) > 0)
