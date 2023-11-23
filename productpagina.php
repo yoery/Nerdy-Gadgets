@@ -10,107 +10,145 @@
         .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}
         .h4-logo {color: black; margin-top: 10px;}
 
-        .section-product {width: 1100px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .section-product {width: 1100px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);overflow: hidden;}
         .container {color: black;}
-        .product-container {width: 600px; margin: 0 auto; color: black;}
+        .product-container {width: 600px; margin: 0 auto; color: black; min-height: 850px;}
         .product-image {float: left; height: 450px; width: 380px; margin-top: 30px;}
-        .product-details {float: right; color: black; width: 900px;}
+        .img-producten {max-width: 100%; height: auto;} /* Ensure the image doesn't exceed its container */
+        .product-details {float: right; color: black; width: 650px; text-align: center; margin-top: -110px;}
         .h2-product {color: black; float: both; padding: 150px; display: flex; flex-direction: column; align-items: center;}
-        .href-product {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; width: 200px;}
+        .href-product {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 10px; width: 200px;}
 
-        .section-reviews {width: 1300px; height: 650px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); position: center;}
+        .section-reviews {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; width: 1200px; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
         .product-reviews {margin-top: 20px; color: black;}
         .review-author {display: inline-block; margin: 20px; height: 250px; width: 550px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
         .review-content {float: left; width:  400px; color: black;}
         .avatar {vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;}
-        
-        .section-voorgesteld {width: 1200px; height: 450px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-        .h2-titel-voorgesteld {color: black;}
-        .div-margin-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
-        .img-voorgesteld {width: 260px; height: 100px; object-fit:contain; padding: 5px;}
-        .h3-voorgesteld {color: black;}
-        .p-voorgesteld {color: black;}
-        .h2-voorgesteld {color: black; padding: 5px;}
-        .href-voorgesteld {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px;}
-        a:hover{text-decoration: none; color: white;}
-        .div-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-        
-        .section-footer {width: 900px; height: 50px; margin-top: 50px;}
-        .h6-footer {color: black;}
-        .href-more-info {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; width: 200px;}
-        .div-margin-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
-        .href-product {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; width: 200px;}
-    </style>
 
+        .producten {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; width: 1400px; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .producten-h2 {text-align: center; width: 100%; margin-bottom: 10px;}
+        .product-info1 {width: 400px; height: 450px; margin: 20px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-sizing: border-box; text-align: center;}
+        .img-producten1 {width: 260px; height: 100px; object-fit: contain; padding: 5px; margin: 0 auto;}
+        .h3-producten1 {color: black;}
+        .p-producten1 {color: black;}
+        .h2-producten1 {color: black; padding: 5px;}
+        .link-producten1 {display: block; text-align: center; background-color: green; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
+        .link-producten2 {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
+    </style>
 </head>
 <body>
-<?php include 'navigation.php'; ?>
+    <?php include 'navigation.php'; ?>
 
-<section class="section-logo">
+    <section class="section-logo">
+        <center>
+            <img src="images/nerdy_gadgets.png" class="img-logo">   
+            <h4 class="h4-logo">Smart Tech for Nerdy Minds</h4>
+        </center>
+    </section>
+
     <center>
-        <img src="images/nerdy_gadgets.png" class="img-logo">   
-        <h4 class="h4-logo">Smart Tech for Nerdy Minds</h4>
-    </center>
-</section>
+        <section class="section-product">
+            <div class="container">
+                <?php
+                // Check if the product_name is set in the URL
+                if (isset($_GET['product_name'])) {
+                    $productName = $_GET['product_name'];
 
-<center>
-    <section class="section-product">
-        <div class="container">
-            <?php
-            // Check if the product_name is set in the URL
-            if (isset($_GET['product_name'])) {
-                $productName = $_GET['product_name'];
+                    // Fetch product details from the database using the product name
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $database = "nerdy_gadgets_start";
+                    $conn = new mysqli($servername, $username, $password, $database);
 
-                // Fetch product details from the database using the product name
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $database = "nerdy_gadgets_start";
-                $conn = new mysqli($servername, $username, $password, $database);
-
-                if ($conn->connect_error) {
-                    die("Connection failed: " . $conn->connect_error);
-                }
-
-                $sql = "SELECT * FROM product WHERE name = '$productName'";
-                $result = $conn->query($sql);
-
-                if ($result->num_rows > 0) {
-                    $imagePath = '/Nerdy-Gadgets/product_images/';
-                    while ($row = $result->fetch_assoc()) {
-                        // Display product information
-                        echo "<h1>{$row['name']}</h1>";
-                        echo "<div class='product-info'>";
-                        echo "<div class='product-image'>";
-                        echo "<img src='$imagePath/{$row["image"]}.jpg' alt='Productafbeelding' class='img-producten'>";
-                        echo "</div>";
-                        echo "<div class='h2-product'>";
-                        echo "<h2>€{$row['price']},-</h2>";
-                        echo "<button type='button' class='href-product' onclick='addToCart(\"{$row["name"]}\", {$row["price"]})'>Voeg toe aan winkelwagen</button>";
-                        echo "</div>";
-                        echo "<div class='product-details'>";
-                        echo "<h5>{$row['description']}</h5>";
-                        echo "</div>";
-                        echo "</div>";
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
                     }
-                } else {
-                    echo "Product not found.";
-                }
 
-                $conn->close();
-            } else {
-                echo "Product name not specified.";
-            }
-            ?>
+                    $sql = "SELECT * FROM product WHERE name = '$productName'";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        $imagePath = '/Nerdy-Gadgets/product_images/';
+                        while ($row = $result->fetch_assoc()) {
+                            // Display product information
+                            echo "<h1>{$row['name']}</h1>";
+                            echo "<div class='product-info'>";
+                            echo "<div class='product-image'>";
+                            echo "<img src='$imagePath/{$row["image"]}.jpg' alt='Productafbeelding' class='img-producten'>";
+                            echo "</div>";
+                            echo "<div class='h2-product'>";
+                            echo "<h2>€{$row['price']},-</h2>";
+                            echo "<button type='button' class='href-product' onclick='addToCart(\"{$row["name"]}\", {$row["price"]})'>Voeg toe aan winkelwagen</button>";
+                            echo "</div>";
+                            echo "<div class='product-details'>";
+                            echo "<h5>{$row['description']}</h5>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+                    } else {
+                        echo "Product not found.";
+                    }
+
+                    $conn->close();
+                } else {
+                    echo "Product name not specified.";
+                }
+                ?>
             </div>
         </section>
     </center>
 
-    <center>
-        <section class="section-voorgesteld">
-            <h2 class="h2-titel-voorgesteld">Gerelateerde Producten</h2>
+    <section class="producten">
+    <h2 class="producten-h2">Gerelateerde Producten</h2>
+    <?php
+    // Fetch related products from the database (you can modify this based on your database structure)
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "nerdy_gadgets_start";
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Example query to fetch related products (you may need to modify this based on your database structure)
+    $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag') ORDER BY RAND() LIMIT 3";
+    $resultRelated = $conn->query($sqlRelated);
+
+    if ($resultRelated->num_rows > 0) {
+        $imagePath = '/Nerdy-Gadgets/product_images/';
+        while ($row = $resultRelated->fetch_assoc()) {
+            $shortDescription = substr($row["description"], 0, 150);
+            $shortName = substr($row["name"], 0, 17);
+            $imageName = $row["image"];
+
+            echo "<div class='product-info1'>";
+            echo "<img src='$imagePath/$imageName.jpg' alt='Productafbeelding' class='img-producten1'>";
+            echo "<h2 class='h3-producten1'>" . $shortName . " <a href='#' onclick='redirectToProduct(\"{$row["name"]}\")'>...</a></h2>";
+            echo "<p class='p-producten1'>" . $shortDescription . " <a href='#' onclick='redirectToProduct(\"{$row["name"]}\")'>Lees meer</a></p>";
+            echo "<p class='h2-producten1'>Price: €" . $row["price"] . "</p>";
+            echo "<button type='button' class='link-producten2' onclick='redirectToProduct(\"{$row["name"]}\")'> More info</button>";
+            echo "<button type='button' class='link-producten1' onclick='addToCart(\"{$row["name"]}\", {$row["price"]})'>Voeg toe aan winkelwagen</button>";
+            echo "</div>";
+        }
+    } else {
+        echo "Geen resultaten gevonden";
+    }
+
+    $conn->close();
+    ?>
+</section>
+
+<center>
+    <section class="section-reviews">
+        <div class="product-reviews">
+            <h2>Reviews</h2>
+            <a href='leave_review.php?product_name=<?php echo urlencode($productName); ?>' class='link-producten2'>Leave a Review</a>
+
             <?php
-            // Fetch related products from the database (you can modify this based on your database structure)
+            // Fetch reviews for the current product from the database
             $servername = "localhost";
             $username = "root";
             $password = "";
@@ -121,94 +159,60 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            // Example query to fetch related products (you may need to modify this based on your database structure)
-            $sqlRelated = "SELECT * FROM product WHERE category = 'phones' LIMIT 3";
-            $resultRelated = $conn->query($sqlRelated);
+            $productName = $_GET['product_name'];
+            $sqlReviews = "SELECT * FROM product_reviews WHERE product_name = '$productName'";
+            $resultReviews = $conn->query($sqlReviews);
 
-            if ($resultRelated->num_rows > 0) {
-                while ($rowRelated = $resultRelated->fetch_assoc()) {
-                    // Display related product information
-                    echo "<div class='div-margin-voorgesteld'>";
-                    echo "<img src='images/{$rowRelated['image']}' class='img-voorgesteld'/>";
-                    echo "<h3 class='h3-voorgesteld'>{$rowRelated['name']}</h3>";
-                    echo "<p class='p-voorgesteld'>{$rowRelated['description']}</p>";
-                    echo "<h2 class='h2-voorgesteld'>€{$rowRelated['price']},-</h2>";
-                    // Link to the productpagina.php page with the product name in the URL
-                    echo "<a href='productpagina.php?product_name={$rowRelated['name']}' class='href-voorgesteld'>Meer info</a>";
+            if ($resultReviews->num_rows > 0) {
+                while ($row = $resultReviews->fetch_assoc()) {
+                    echo "<div class='review-author'>";
+                    echo "<h4>{$row['reviewer_name']}</h4>";
+                    echo "<p>{$row['review_content']}</p>";
                     echo "</div>";
                 }
+            } else {
+                echo "<p>No reviews yet.</p>";
             }
 
             $conn->close();
             ?>
-        </section>
-    </center>
-
-
-<center>
-    <section class="section-reviews">
-    <div class="product-reviews">
-      <h2>Reviews</h2>
-          <div class="review-author">
-            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
-            <h4>John Doe</h4>
-            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
-          </div>
-
-          <div class="review-author">
-            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
-            <h4>John Doe</h4>
-            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
-          </div>
-
-          <div class="review-author">
-            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
-            <h4>John Doe</h4>
-            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
-          </div>
-
-          <div class="review-author">
-            <img src="images/John_doe_reset.png" alt="Reviewer image" class="avatar">
-            <h4>John Doe</h4>
-            <p>I've been using the Samsung Galaxy A53 128GB Zwart 5G for a few weeks now and I'm really impressed with it. The phone is fast, has a great camera, and a long-lasting battery. I would definitely recommend this phone to anyone looking for a new Android phone.</p>
-          </div>
-</section>
+        </div>
+    </section>
 </center>
 
-<center>
+    <center>
         <section class="section-footer">
             <h6 class="h6-footer">@Nerdy gadget 2023</h6>
         </section>
     </center>
 
     <script>
-
-         function filterProducts(category) {
-            window.location.href = "?sort=" + document.getElementById("sort").value + "&category=" + category;
-        }
-
         function addToCart(productName, productPrice) {
-    // Use prompt to ask for the quantity, default is 1
-    var quantity = prompt("Enter quantity:", 1);
+            // Use prompt to ask for the quantity, default is 1
+            var quantity = prompt("Enter quantity:", 1);
 
-    // Validate quantity
-    if (quantity === null || isNaN(quantity) || quantity <= 0) {
-        alert("Invalid quantity.");
-        return;
-    }
+            // Validate quantity
+            if (quantity === null || isNaN(quantity) || quantity <= 0) {
+                alert("Invalid quantity.");
+                return;
+            }
 
-    // Send the data to addToCart.php using AJAX
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
-    xhr.onload = function () {
-        if (xhr.status == 200) {
-            alert(xhr.responseText);
-        } else {
-            alert("Error adding to cart.");
+            // Send the data to addToCart.php using AJAX
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    alert(xhr.responseText);
+                } else {
+                    alert("Error adding to cart.");
+                }
+            };
+            xhr.send();
         }
-    };
-    xhr.send();
-}
+
+        function redirectToProduct(productName) {
+          window.location.href = "productpagina.php?product_name=" + encodeURIComponent(productName);
+        }
     </script>
- </body>
+</body>
 </html>

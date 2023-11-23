@@ -45,8 +45,8 @@ session_start();
                     <div>
                         <form action="searchpage.php?searching=true" method="POST">
                             <input type="text" name="searchcategory" value="">
-                            <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
-                                   style="filter: invert(1);">
+                         <!--    <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
+                                   style="filter: invert(1);">  -->
                         </form>
                     </div>
                     <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
