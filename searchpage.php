@@ -9,17 +9,17 @@
     }
 </style>
 
-<table>
+<table style="max-width: 100%">
 
 
     <thead>
     <tr>
-        <th>
+        <th style="width: 25%">
             name
         </th>
-        <th> desciption</th>
-        <th>price</th>
-        <th>image</th>
+        <th style="width: 25%"> desciption</th>
+        <th style="width: 25%">price</th>
+        <th style="width: 25%">image</th>
     </tr>
     </thead>
 
@@ -50,17 +50,18 @@
         $filtervalue = $_POST['searchcategory'];
         $filterdata = "SELECT * FROM product WHERE CONCAT(name,description,price,image) LIKE '%$filtervalue%'";
         $filterdata_run = mysqli_query($connection, $filterdata);
-
+        $imagePath = '/Nerdy-Gadgets/product_images/';
         if (mysqli_num_rows($filterdata_run) > 0)
         {
             foreach ($filterdata_run as $data)
             {
+                $image = $data['image'];
                 ?>
                 <tr>
-                    <td><?php echo $data['name']?></td>
-                    <td><?php echo $data['description']?></td>
-                    <td><?php echo $data['price']?></td>
-                    <td><?php echo $data['image']?></td>
+                    <td style="width: 25%"><?php echo $data['name']?></td>
+                    <td style="width: 25%"><?php echo substr($data['description'], 0, 50)?></td>
+                    <td style="width: 25%"><?php echo $data['price']?></td>
+                    <td style="width: 25%"><?php echo "<img src=$imagePath/$image.jpg style='width: 25%'>"?></td>
                 </tr>
                 <?php
             }
