@@ -72,6 +72,18 @@
         .link-producten {
             display: block;
             text-align: center;
+            background-color: green;
+            color: black;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            color: black;
+            margin-top: 1px;
+        }
+        
+        .link-producten2 {
+            display: block;
+            text-align: center;
             background-color: #007bff;
             color: black;
             text-decoration: none;
@@ -182,6 +194,7 @@
                     echo "<h2 class='h3-producten'>" . $shortName . " <a href='#'>...</a></h2>";
                     echo "<p class='p-producten'>" . $shortDescription . " <a href='#'>Lees meer</a></p>";
                     echo "<p class='h2-producten'>Price: €" . $row["price"] . "</p>";
+                    echo "<button type='button' class='link-producten2' onclick='redirectToProduct(\"{$row["name"]}\")'> More info</button>";
                     echo "<button type='button' class='link-producten' onclick='addToCart(\"{$row["name"]}\", {$row["price"]})'>Voeg toe aan winkelwagen</button>";
                     echo "</div>";
                 }
@@ -226,6 +239,9 @@
     xhr.send();
 }
 
+function redirectToProduct(productName) {
+    window.location.href = "productpagina.php?product_name=" + encodeURIComponent(productName);
+}
 
 
     </script>   
