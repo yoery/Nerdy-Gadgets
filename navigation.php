@@ -19,7 +19,7 @@ session_start();
 </head>
 
 <body>
-    <section>
+    <section class="bar">
         <center>
             <div>
                 <nav class="nav_bar">
