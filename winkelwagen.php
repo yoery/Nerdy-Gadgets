@@ -7,48 +7,21 @@
     <title>Winkelwagen</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
+        body {font-family: Arial, sans-serif; background-color: #f8f9fa;}
 
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+        section {margin: 20px; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
-        h2 {
-            color: #007bff;
-        }
+        h2 {color: #007bff;}
 
-        .cart-item {
-            border: 1px solid #dee2e6;
-            margin-bottom: 15px;
-            padding: 15px;
-            border-radius: 5px;
-        }
+        .cart-item {border: 1px solid #dee2e6; margin-bottom: 15px; padding: 15px; border-radius: 5px;}
 
-        p {
-            margin: 0;
-        }
+        p {margin: 0;}
 
-        a {
-            color: #dc3545;
-            text-decoration: none;
-            margin-left: 10px;
-            cursor: pointer;
-        }
+        a {color: #dc3545; text-decoration: none; margin-left: 10px; cursor: pointer;}
 
-        a:hover {
-            text-decoration: underline;
-        }
+        a:hover {text-decoration: underline;}
 
-        .empty-cart-message {
-            color: #6c757d;
-        }
+        .empty-cart-message {color: #6c757d;}
     </style>
 </head>
 
@@ -98,7 +71,7 @@
                 echo "<p>Total Price: €{$totalPrice}</p>";
 
                 // Add "Verder" button
-                echo "<a href='credentials_page.php' class='btn btn-primary'>Verder</a>";
+                echo "<a href='credentials_page.php' class='btn btn-primary' style='background-color: blue;'>Verder</a>";
             } else {
                 echo "<p class='empty-cart-message'>Geen items in de winkelwagen</p>";
             }

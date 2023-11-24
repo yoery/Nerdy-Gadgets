@@ -6,38 +6,15 @@
     <title>Registratiepagina</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
+        .body {font-family: Arial, sans-serif; background-color: #f8f9fa;}
 
-        .section-registratie {
-            width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: white;
-        }
+        .section-registratie {width: 400px; margin: 50px auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: white;}
 
-        h2 {
-            text-align: center;
-            color: #007bff;
-        }
+        .h2 {text-align: center; color: #007bff;}
 
-        input {
-            margin-bottom: 10px;
-        }
-
-        input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+        .input {margin-bottom: 10px;}
+        input[type="submit"] {background-color: #007bff; color: white; cursor: pointer;}
+        input[type="submit"]:hover {background-color: #0056b3;}
     </style>
 </head>
 <body>

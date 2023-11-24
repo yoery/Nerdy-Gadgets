@@ -9,102 +9,21 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
     
-        .section-logo {
-            width: auto;
-            height: 800;
-            position: center;
-        }
+        .section-logo { width: auto; height: 800; position: center; }
+        .img-logo { width: 800px; height: 260px; margin-top: 50px; border-radius: 10px; }
+        .h4-logo { color: black; margin-top: 10px; }
 
-        .img-logo {
-            width: 800px;
-            height: 260px;
-            margin-top: 50px;
-            border-radius: 10px;
-        }
+        .producten { width: 1500px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; }
+        .product-info { width: 400px; height: 450px; margin: 20px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-sizing: border-box; }
+        .img-producten { width: 260px; height: 100px; object-fit: contain; padding: 5px; }
+        .h3-producten { color: black; }
+        .p-producten { color: black; }
+        .h2-producten { color: black; padding: 5px; }
+        .link-producten { display: block; text-align: center; background-color: green; color: black; text-decoration: none; padding: 5px; border-radius: 5px; color: black; margin-top: 1px; }
+        .link-producten2 { display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; color: black; margin-top: 1px; }
+        .dropdown { display: inline-block; margin-right: 10px; }
+        .dropdown select { padding: 5px; border-radius: 5px; border: 1px solid #ccc; cursor: pointer; }
 
-        .h4-logo {
-            color: black;
-            margin-top: 10px;
-        }
-
-        .producten {
-            width: 1500px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .product-info {
-            width: 400px;
-            height: 450px;
-            margin: 20px;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-sizing: border-box;
-        }
-
-        .img-producten {
-            width: 260px;
-            height: 100px;
-            object-fit: contain;
-            padding: 5px;
-        }
-
-        .h3-producten {
-            color: black;
-        }
-
-        .p-producten {
-            color: black;
-        }
-
-        .h2-producten {
-            color: black;
-            padding: 5px;
-        }
-
-        .link-producten {
-            display: block;
-            text-align: center;
-            background-color: green;
-            color: black;
-            text-decoration: none;
-            padding: 5px;
-            border-radius: 5px;
-            color: black;
-            margin-top: 1px;
-        }
-        
-        .link-producten2 {
-            display: block;
-            text-align: center;
-            background-color: #007bff;
-            color: black;
-            text-decoration: none;
-            padding: 5px;
-            border-radius: 5px;
-            color: black;
-            margin-top: 1px;
-        }
-
-
-        .dropdown {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .dropdown select {
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            cursor: pointer;
-        }
     </style>
 </head>
 
@@ -187,12 +106,9 @@
                     $imageName = $row["image"];
 
                     echo "<div class='product-info'>";
-                    //<img src="images/nerdy_gadgets.png" class="img-logo">
-                    //echo "<img src=". $row["image"] . "' alt='Productafbeelding' class='img-producten'>";
-                    //echo $imagePath . $row['image'] . '.jpg';
                     echo "<img src='$imagePath/$imageName.jpg' alt='Productafbeelding' class='img-producten'>";
-                    echo "<h2 class='h3-producten'>" . $shortName . " <a href='#'>...</a></h2>";
-                    echo "<p class='p-producten'>" . $shortDescription . " <a href='#'>Lees meer</a></p>";
+                    echo "<h2 class='h3-producten'>" . $shortName . " <a href='#' onclick='redirectToProduct(\"{$row["name"]}\")'>...</a></h2>";
+                    echo "<p class='p-producten'>" . $shortDescription . " <a href='#' onclick='redirectToProduct(\"{$row["name"]}\")'>Lees meer</a></p>";
                     echo "<p class='h2-producten'>Price: €" . $row["price"] . "</p>";
                     echo "<button type='button' class='link-producten2' onclick='redirectToProduct(\"{$row["name"]}\")'> More info</button>";
                     echo "<button type='button' class='link-producten' onclick='addToCart(\"{$row["name"]}\", {$row["price"]})'>Voeg toe aan winkelwagen</button>";
@@ -217,16 +133,13 @@
         }
 
         function addToCart(productName, productPrice) {
-    // Use prompt to ask for the quantity, default is 1
     var quantity = prompt("Enter quantity:", 1);
 
-    // Validate quantity
     if (quantity === null || isNaN(quantity) || quantity <= 0) {
         alert("Invalid quantity.");
         return;
     }
-
-    // Send the data to addToCart.php using AJAX
+    
     const xhr = new XMLHttpRequest();
     xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
     xhr.onload = function () {

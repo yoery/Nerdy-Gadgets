@@ -12,14 +12,14 @@
     <?php include 'navigation.php'; ?>
 
     <div class="container mt-4">
-        <h2>Fill in Your Credentials</h2>
+        <h2>Vul je gegevens in</h2>
         <form action="process_order.php" method="post">
             <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name">Naam:</label>
                 <input type="text" class="form-control" name="name" required>
             </div>
             <div class="form-group">
-                <label for="family_name">Family Name:</label>
+                <label for="family_name">Achternaam:</label>
                 <input type="text" class="form-control" name="family_name" required>
             </div>
             <div class="form-group">
@@ -27,11 +27,11 @@
                 <input type="text" class="form-control" name="postcode" required>
             </div>
             <div class="form-group">
-                <label for="housenumber">Housenumber:</label>
+                <label for="housenumber">Huisnummer:</label>
                 <input type="text" class="form-control" name="housenumber" required>
             </div>
             <div class="form-group">
-                <label for="streetname">Streetname:</label>
+                <label for="streetname">Straatnaam:</label>
                 <input type="text" class="form-control" name="streetname" required>
             </div>
             <div class="form-group">
@@ -39,10 +39,10 @@
                 <input type="email" class="form-control" name="email" required>
             </div>
             <div class="form-group">
-                <label for="phone_number">Phone Number:</label>
+                <label for="phone_number">Telefoonnummer:</label>
                 <input type="tel" class="form-control" name="phone_number" required>
             </div>
-            <button type="submit" class="btn btn-primary">Place Order</button>
+            <button type="submit" class="btn btn-primary" style='background-color: blue;'>Plaats bestelling</button>
         </form>
     </div>
 </body>

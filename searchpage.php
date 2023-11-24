@@ -4,9 +4,7 @@
 
 </head>
 <style>
-    table,th,tr{
-        border: 1px solid black;
-    }
+    table,th,tr{border: 1px solid black;}
 </style>
 <body>
 <?php include 'navigation.php'

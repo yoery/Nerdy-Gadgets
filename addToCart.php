@@ -1,7 +1,4 @@
 <?php
-// db_connection.php - Include your database connection script here
-
-// Replace these lines with your actual database connection code
 $servername = "localhost";
 $username = "root";
 $password = "";

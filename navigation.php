@@ -8,31 +8,13 @@ session_start();
     <link rel="stylesheet" type="text/css" media="screen" href="navigation.css" />
     <link rel="stylesheet" href="searchbar.css">
     <style>
-        .nav_bar {
-            position: relative;
-            z-index: 900;
-        }
+        .nav_bar {position: relative; z-index: 900;}
 
-        .welcome-container {
-            position: relative;
-            display: inline-block;
-        }
+        .welcome-container {position: relative; display: inline-block;}
 
-        .logout-link {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #fff; /* Adjust the background color as needed */
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        .logout-link {display: none; position: absolute; top: 100%; left: 0; background-color: #fff; padding: 5px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); color: #fff;}
 
-        .welcome-container:hover .logout-link {
-            display: block;
-        }
+        .welcome-container:hover .logout-link {display: block; color: #fff;}
     </style>
 </head>
 
@@ -45,8 +27,8 @@ session_start();
                     <div>
                         <form action="searchpage.php?searching=true" method="POST">
                             <input type="text" name="searchcategory" value="">
-                            <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
-                                   style="filter: invert(1);">
+                         <!--    <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
+                                   style="filter: invert(1);">  -->
                         </form>
                     </div>
                     <div onclick="location.href='productoverzichtspagina.php';">Producten</div>

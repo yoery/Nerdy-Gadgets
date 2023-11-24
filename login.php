@@ -24,10 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         if (password_verify($password, $hashedPassword)) {
-            // Login successful
             session_start();
             $_SESSION['user_email'] = $email;
-            $_SESSION['first_name'] = $row['first_name']; // Assuming 'first_name' is the column name in your database
+            $_SESSION['first_name'] = $row['first_name'];
             $_SESSION['login_time'] = time();
             $_SESSION['expiration'] = 2 * 60 * 60;
         
@@ -49,74 +48,24 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+        body {font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;}
 
-        main {
-            text-align: center;
-        }
+        main {text-align: center;}
 
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: 0 auto;
-        }
+        form {background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 300px; margin: 0 auto;}
 
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
+        h2 {margin-bottom: 20px; color: #333;}
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
+        label {display: block; margin-bottom: 8px; font-weight: bold;}
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+        input {width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;}
+        input[type="submit"] {background-color: #3498db; color: white; cursor: pointer;}
+        input[type="submit"]:hover {background-color: #2980b9;}
 
-        input[type="submit"] {
-            background-color: #3498db; /* Blue background */
-            color: white;
-            cursor: pointer;
-        }
+        .message {color: #ff0000; margin-top: 10px;}
 
-        input[type="submit"]:hover {
-            background-color: #2980b9; /* Darker blue on hover */
-        }
-
-        .message {
-            color: #ff0000;
-            margin-top: 10px;
-        }
-
-        .register-link {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .register-link a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
+        .register-link {text-align: center; margin-top: 10px;}
+        .register-link a {color: #3498db; text-decoration: none; font-weight: bold;}
     </style>
 </head>
 <body>
