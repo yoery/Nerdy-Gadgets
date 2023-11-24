@@ -8,9 +8,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
 
-        .section-logo {width: auto; height: 800; position: center;}
-        .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}
-        .h4-logo {color: black; margin-top: 10px;}
+        .section-logo {width: auto; height: 800; margin-bottom: 25px; margin-top:25px; position: center; background-color: #23232f;}
+        .img-logo {width: 800px; height: 260px; margin-top: 25px; border-radius: 10px;}
+        .h4-logo {color: white; margin-top: -20px; margin-bottom: 50px; background-color: #23232f;}
 
         .section-info {width: 800px; height: 600px; margin-top: 50px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
         .img-info {width: 500px; height: 250px; margin-top: 30px; border-radius: 10px;}
