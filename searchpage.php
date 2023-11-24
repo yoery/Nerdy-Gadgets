@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <style>
     table,th,tr{border: 1px solid black;}
 </style>
-
+<body>
+<?php include 'navigation.php'
+?>
+</body>
 <table style="max-width: 100%">
-
-
     <thead>
     <tr>
         <th style="width: 25%">

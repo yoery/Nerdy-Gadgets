@@ -8,14 +8,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex;
-    width: 220px;
-    height: 40px;
+    /* width: 220px;
+    height: 40px; */
 }
 
 .search_bar {
     width: 100%;
-    max-width: 220px;
-    max-height: 40px;
+    /* max-width: 220px;
+    max-height: 40px; */
     background: rgba(0,0,0,0.6);
     align-items: normal;
     border-radius: 5px;
