@@ -18,7 +18,7 @@ session_start();
     </style>
 </head>
 
-<body>
+<body style="background-color: white;">
     <section class="bar">
         <center>
             <div>
