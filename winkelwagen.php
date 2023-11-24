@@ -71,7 +71,7 @@
                 echo "<p>Total Price: €{$totalPrice}</p>";
 
                 // Add "Verder" button
-                echo "<a href='credentials_page.php' class='btn btn-primary'>Verder</a>";
+                echo "<a href='credentials_page.php' class='btn btn-primary' style='background-color: blue;'>Verder</a>";
             } else {
                 echo "<p class='empty-cart-message'>Geen items in de winkelwagen</p>";
             }
