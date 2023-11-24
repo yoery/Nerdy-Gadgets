@@ -26,7 +26,7 @@ session_start();
                     <div2 onclick="location.href='index.php';"><img src="images/Square_logo-transparant.png"
                             style="height: 44px; object-fit:contain; border-radius: 5px;"></div2>
                     <div>
-                        <form action="searchpage.php?searching=true" method="POST">
+                        <form action="productoverzichtspagina.php?searching=true" method="POST">
                             <input type="text" name="searchcategory" value="" style="object-fit:contain; height: 45px; width:100%; background-color:#b9b9b9; border-radius:7px;">
                             <!-- <input type="reset" value="X" alt="Clear the search form"> -->
                          <!--    <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
