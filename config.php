@@ -10,5 +10,3 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 ?>
-
-# include 'config.php'; bij de search

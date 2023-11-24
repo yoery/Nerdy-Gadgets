@@ -23,16 +23,15 @@
         .h3-ervaring {color: black;}
         .p-ervaring {color: black;}
 
-        .section-voorgesteld {width: 900px; height: 850px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-        .h2-titel-voorgesteld {color: black;}
-        .div-margin-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
-        .img-voorgesteld {width: 260px; height: 100px; object-fit:contain; padding: 5px;}
-        .h3-voorgesteld {color: black;}
-        .p-voorgesteld {color: black;}
-        .h2-voorgesteld {color: black; padding: 5px;}
-        .href-voorgesteld {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px;}
-         a:hover{text-decoration: none; color: white;}
-        .div-voorgesteld {display: inline-block; margin: 20px; height: 350px; width: 350px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .producten {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; width: 1400px; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .producten-h2 {text-align: center; width: 100%; margin-bottom: 10px;}
+        .product-info1 {width: 400px; height: 450px; margin: 20px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-sizing: border-box; text-align: center;}
+        .img-producten1 {width: 260px; height: 100px; object-fit: contain; padding: 5px; margin: 0 auto;}
+        .h3-producten1 {color: black;}
+        .p-producten1 {color: black;}
+        .h2-producten1 {color: black; padding: 5px;}
+        .link-producten1 {display: block; text-align: center; background-color: green; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
+        .link-producten2 {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
 
         .section-footer {width: 900px; height: 50px; margin-top: 50px;}
         .h6-footer {color: black;}
@@ -92,39 +91,53 @@
 
 
     <center>
-    <section class="section-voorgesteld">
-            <h2 class="h2-titel-voorgesteld">Voorgestelde Producten</h2>
-            <div class="div-margin-voorgesteld">
-                    <img src="images/product1.png" class="img-voorgesteld"/>
-                    <h3 class="h3-voorgesteld">Samsung A53</h3>
-                    <p class="p-voorgesteld">Samsung A53 is een mooie goeie telefoon gemaakt door Samung en gedesigned door Samsung</p>
-                    <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product3.php" class="href-voorgesteld">Meer info</a>
+    <section class="producten">
+            <h2 class="producten-h2">Voorgestelde Producten</h2>
+            <div class="product-info1">
+                    <img src="images/product1.png" class="img-producten1"/>
+                    <h3 class="h3-producten1">Samsung A53</h3>
+                    <p class="p-producten1">Samsung A53 is een mooie goeie telefoon gemaakt door Samung en gedesigned door Samsung</p>
+                    <h2 class="h2-producten1">€250,-</h2>
+                    <button class="link-producten2"><a href="product3.php" style="color: black;">More info</a></button>
+                    <button class="link-producten1" onclick="addToCart">Voeg toe aan winkelwagen</button>
                 </div>
 
-                <div class="div-voorgesteld">
-                    <img src="images/product2copy.png" class="img-voorgesteld"/>
-                    <h3 class="h3-voorgesteld">Flipper Zero</h3>
-                    <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product2.php" class="href-voorgesteld">Meer info</a>
-                </div>
+                <?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "nerdy_gadgets_start";
+    $conn = new mysqli($servername, $username, $password, $database);
 
-                <div class="div-voorgesteld">
-                    <img src="images/product2copy.png" class="img-voorgesteld"/>
-                    <h3 class="h3-voorgesteld">Flipper Zero</h3>
-                    <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product2.php" class="href-voorgesteld">Meer info</a>
-                </div>
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-                <div class="div-voorgesteld">
-                    <img src="images/product2copy.png" class="img-voorgesteld"/>
-                    <h3 class="h3-voorgesteld">Flipper Zero</h3>
-                    <p class="p-voorgesteld">Flipper Zero is een draagbare multitool voor pentesters en geeks in een speelgoedachtig jasje.</p>
-                    <h2 class="h2-voorgesteld">€250,-</h2>
-                    <a href="product2.php" class="href-voorgesteld">Meer info</a>
-                </div>
+    $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag') ORDER BY RAND() LIMIT 5";
+    $resultRelated = $conn->query($sqlRelated);
+
+    if ($resultRelated->num_rows > 0) {
+        $imagePath = '/Nerdy-Gadgets/product_images/';
+        while ($row = $resultRelated->fetch_assoc()) {
+            $shortDescription = substr($row["description"], 0, 150);
+            $shortName = substr($row["name"], 0, 17);
+            $imageName = $row["image"];
+
+            echo "<div class='product-info1'>";
+            echo "<img src='$imagePath/$imageName.jpg' alt='Productafbeelding' class='img-producten1'>";
+            echo "<h2 class='h3-producten1'>" . $shortName . " <a href='#' onclick='redirectToProduct(\"{$row["name"]}\")'>...</a></h2>";
+            echo "<p class='p-producten1'>" . $shortDescription . " <a href='#' onclick='redirectToProduct(\"{$row["name"]}\")'>Lees meer</a></p>";
+            echo "<p class='h2-producten1'>Price: €" . $row["price"] . "</p>";
+            echo "<button type='button' class='link-producten2' onclick='redirectToProduct(\"{$row["name"]}\")'> More info</button>";
+            echo "<button type='button' class='link-producten1' onclick='addToCart(\"{$row["name"]}\", {$row["price"]})'>Voeg toe aan winkelwagen</button>";
+            echo "</div>";
+        }
+    } else {
+        echo "Geen resultaten gevonden";
+    }
+
+    $conn->close();
+    ?>
         </section>
     </center>
 
@@ -133,5 +146,30 @@
             <h6 class="h6-footer">@Nerdy gadget 2023</h6>
         </section>
     </center>
+    <script>
+        function addToCart(productName, productPrice) {
+            var quantity = prompt("Enter quantity:", 1);
+
+            if (quantity === null || isNaN(quantity) || quantity <= 0) {
+                alert("Invalid quantity.");
+                return;
+            }
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    alert(xhr.responseText);
+                } else {
+                    alert("Error adding to cart.");
+                }
+            };
+            xhr.send();
+        }
+
+        function redirectToProduct(productName) {
+          window.location.href = "productpagina.php?product_name=" + encodeURIComponent(productName);
+        }
+    </script>
  </body>
 </html>
