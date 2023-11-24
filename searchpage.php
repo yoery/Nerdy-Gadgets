@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <style>
     table,th,tr{border: 1px solid black;}
