@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $review = $_POST['review'];
     $productName = $_POST['product_name'];
 
-    // Insert the review into the database
+    // Insert the review into the database using prepared statements
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -16,17 +16,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO product_reviews (product_name, reviewer_name, review_content) VALUES ('$productName', '$name', '$review')";
+    // Use prepared statements to prevent SQL injection
+    $stmt = $conn->prepare("INSERT INTO product_reviews (product_name, reviewer_name, review_content) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $productName, $name, $review);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         echo "Review submitted successfully!";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $stmt->error;
     }
 
+    $stmt->close();
     $conn->close();
 }
 
+// Redirect back to the product page
 $productName = $_POST['product_name'];
 header("Location: productpagina.php?product_name=" . urlencode($productName));
 exit();
