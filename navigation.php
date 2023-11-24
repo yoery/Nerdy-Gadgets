@@ -23,10 +23,12 @@ session_start();
         <center>
             <div>
                 <nav class="nav_bar">
-                    <div onclick="location.href='index.php';">Home</div>
+                    <div2 onclick="location.href='index.php';"><img src="images/Square_logo-transparant.png"
+                            style="height: 44px; object-fit:contain; border-radius: 5px;"></div2>
                     <div>
                         <form action="searchpage.php?searching=true" method="POST">
-                            <input type="text" name="searchcategory" value="">
+                            <input type="text" name="searchcategory" value="" style="object-fit:contain; height: 45px; width:100%; background-color:#b9b9b9; border-radius:7px;">
+                            <!-- <input type="reset" value="X" alt="Clear the search form"> -->
                          <!--    <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
                                    style="filter: invert(1);">  -->
                         </form>
@@ -49,7 +51,7 @@ session_start();
                     ?>
 
                     <div2 onclick="location.href='winkelwagen.php';"><img src="images/Winkelwagen-transparant.png"
-                            style="height: 45px; object-fit:contain; border-radius: 5px;"></div2>
+                            style="height: 44px; object-fit:contain; border-radius: 5px;"></div2>
                 </nav>
             </div>
         </center>
