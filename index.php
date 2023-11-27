@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,17 +44,17 @@
     ?>
     <section class="section-logo">
         <center>
-                <img src="images/nerdy_gadgets.png" class="img-logo">   
+                <img src="images/nerdy_gadgets.png" class="img-logo">
                 <h4 class="h4-logo">Smart Tech for Nerdy Minds</h4>
         </center>
     </section>
 
     <center>
         <section class="section-info">
-        <h5 class="h5-info">De missie van Nerdy Gadgets is om innovatieve technologieën en slimme gadgets toegankelijk te maken voor iedereen, ongeacht hun niveau van technische kennis. 
-            Ons merk streeft ernaar om de nieuwsgierigheid en passie voor technologie te stimuleren, terwijl we de brug slaan tussen geeks en gadget-enthousiastelingen. 
-            We geloven in de kracht van technologie om levens te verbeteren en streven ernaar om hoogwaardige, praktische, en soms speelse gadgets te bieden die het dagelijkse leven verrijken. 
-            Onze waarden omvatten innovatie, kwaliteit, klantgerichtheid en een gezonde dosis nerdiness in alles wat we doen. 
+        <h5 class="h5-info">De missie van Nerdy Gadgets is om innovatieve technologieën en slimme gadgets toegankelijk te maken voor iedereen, ongeacht hun niveau van technische kennis.
+            Ons merk streeft ernaar om de nieuwsgierigheid en passie voor technologie te stimuleren, terwijl we de brug slaan tussen geeks en gadget-enthousiastelingen.
+            We geloven in de kracht van technologie om levens te verbeteren en streven ernaar om hoogwaardige, praktische, en soms speelse gadgets te bieden die het dagelijkse leven verrijken.
+            Onze waarden omvatten innovatie, kwaliteit, klantgerichtheid en een gezonde dosis nerdiness in alles wat we doen.
             Bij Nerdy Gadgets geloven we dat technologie niet alleen krachtig, maar ook leuk kan zijn.</h5>
         </section>
     </center>
@@ -102,15 +102,7 @@
                 </div>
 
                 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "nerdy_gadgets_start";
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+                include "db_connection.php";
 
     $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag') ORDER BY RAND() LIMIT 5";
     $resultRelated = $conn->query($sqlRelated);

@@ -6,15 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $productName = $_POST['product_name'];
 
     // Insert the review into the database using prepared statements
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "nerdy_gadgets_start";
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    include "db_connection.php";
 
     // Use prepared statements to prevent SQL injection
     $stmt = $conn->prepare("INSERT INTO product_reviews (product_name, reviewer_name, review_content) VALUES (?, ?, ?)");

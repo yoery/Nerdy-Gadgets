@@ -35,18 +35,7 @@
         <section class="winkelwagen">
             <?php
             // Include your database connection script
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "nerdy_gadgets_start";
-
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $database);
-
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+            include "db_connection.php";
 
             // Retrieve cart items from the database
             $sql = "SELECT product_name, product_price, quantity FROM shopping_cart";
