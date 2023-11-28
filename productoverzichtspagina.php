@@ -34,7 +34,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
-            background-color: #23232f;
+            background-color: #cfcfdc;
         }
 
         .product-info {
@@ -43,7 +43,7 @@
             margin: 20px;
             padding: 10px;
             border-radius: 10px;
-            background-color: #cfcfdc;
+            background-color: #23232f;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-sizing: border-box;
         }
@@ -56,23 +56,23 @@
         }
 
         .h3-producten {
-            color: black;
+            color: white;
         }
 
         .p-producten {
-            color: black;
+            color: white;
         }
 
         .h2-producten {
-            color: black;
+            color: white;
             padding: 5px;
         }
 
         .link-producten {
             display: block;
             text-align: center;
-            background-color: #23232f;
-            color: white;
+            background-color: #cfcfdc;
+            color:black;
             padding: 5px;
             border-radius: 5px;
             margin-top: 1px;
@@ -81,8 +81,8 @@
         .link-producten2 {
             display: block;
             text-align: center;
-            background-color: #23232f;
-            color: white;
+            background-color: #cfcfdc;
+            color: black;
             padding: 5px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
