@@ -12,14 +12,12 @@
             width: auto;
             height: 350px;
             margin-bottom: 25px;
-            /* margin-top: 25px; */
             background-color: #23232f;
         }
 
         .img-logo {
             width: 800px;
             height: 260px;
-            /* margin-top: 25px; */
             border-radius: 10px;
         }
 
