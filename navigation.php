@@ -40,7 +40,7 @@ session_start();
 
 <body>
     <section class="background" style="background-color: #23232f; padding:20px">
-        <section class="bar" style="">
+        <section class="nav_bar_background" style="">
             <center>
                 <div>
                     <nav class="nav_bar">
@@ -49,7 +49,12 @@ session_start();
                         <div>
                             <form action="searchpage.php?searching=true" method="POST">
                                 <input type="text" name="searchcategory" value=""
-                                    style="object-fit:contain; height: 45px; width:100%; background-color:#b9b9b9; border-radius:7px;">
+                                    style="
+                                    object-fit:contain;
+                                    height: 45px;
+                                    width:100%;
+                                    background-color:#b9b9b9;
+                                    border-radius:7px;">
                                 <!-- <input type="reset" value="X" alt="Clear the search form"> -->
                                 <!--    <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
                                    style="filter: invert(1);">  -->

@@ -18,7 +18,7 @@ body {
   line-height: 45px;
 }
 
-.bar {
+.nav_bar_background {
   margin: 20px;
   padding: 20px;
   background-color: #cfcfdc;
@@ -35,7 +35,7 @@ body {
 .nav_bar div {
   color: white;
   width: 100%;
-  box-shadow: 0px 5px 10px -5px black;
+  box-shadow: 0 5px 10px -5px black;
   cursor: pointer;
   background: #23232f;
   transition: all 0.5s ease;
@@ -59,14 +59,12 @@ body {
 
 .nav_bar icon {
   color: black;
-  box-shadow: 0px 5px 10px -5px black;
+  box-shadow: 0 5px 10px -5px black;
   background-color: #23232f;
   cursor: pointer;
   transition: all 0.5s ease;
   border: 0.1px solid rgb(196, 196, 196);
   border-radius: 7px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .nav_bar icon:hover {
@@ -114,7 +112,7 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
