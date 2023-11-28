@@ -30,7 +30,6 @@
             width: 1500px;
             margin-top: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -72,9 +71,8 @@
         .link-producten {
             display: block;
             text-align: center;
-            background-color: green;
-            color: black;
-            text-decoration: none;
+            background-color: #23232f;
+            color: white;
             padding: 5px;
             border-radius: 5px;
             margin-top: 1px;
@@ -83,15 +81,25 @@
         .link-producten2 {
             display: block;
             text-align: center;
-            background-color: #007bff;
-            color: black;
-            text-decoration: none;
+            background-color: #23232f;
+            color: white;
             padding: 5px;
             border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 1px;
         }
 
+        .link-producten:hover {
+            transition: all 0.5s ease;
+            background-color: #3d3d54;
+        }
+        .link-producten2:hover {
+            transition: all 0.5s ease;
+            background-color: #3d3d54;
+        }
+
         .dropdown {
+            color: white;
             display: inline-block;
             margin-right: 10px;
         }
@@ -105,7 +113,7 @@
     </style>
 </head>
 
-<body class="body">
+<body class="body" style="background-color: #23232f">
 <?php include 'navigation.php'; ?>
 
 <section class="section-logo">
@@ -116,7 +124,7 @@
 </section>
 
 <center>
-    <h2 style="color: black;">Alle Producten</h2>
+    <h2 style="color: white;">Alle Producten</h2>
 
     <div class="dropdown">
         <label for="sort">Sorteer op:</label>
