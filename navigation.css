@@ -22,14 +22,8 @@ body {
   margin: 20px;
   padding: 20px;
   background-color: #cfcfdc;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.nav_bar a {
-  width: 200px;
-  text-decoration: none;
-  color: black;
 }
 
 .nav_bar div {
@@ -39,7 +33,7 @@ body {
   cursor: pointer;
   background: #23232f;
   transition: all 0.5s ease;
-  border-radius: 7px;
+  border-radius: 10px;
   margin-left: 1px;
   margin-right: 1px;
 }
@@ -63,8 +57,7 @@ body {
   background-color: #23232f;
   cursor: pointer;
   transition: all 0.5s ease;
-  border: 0.1px solid rgb(196, 196, 196);
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .nav_bar icon:hover {
