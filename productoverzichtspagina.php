@@ -37,6 +37,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
+            background-color: #23232f;
         }
 
         .product-info {
@@ -45,7 +46,7 @@
             margin: 20px;
             padding: 10px;
             border-radius: 10px;
-            background-color: white;
+            background-color: #cfcfdc;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-sizing: border-box;
         }
