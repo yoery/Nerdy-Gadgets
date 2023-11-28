@@ -44,8 +44,8 @@ session_start();
             <center>
                 <div>
                     <nav class="nav_bar">
-                        <div2 onclick="location.href='index.php';"><img src="images/Square_logo-transparant.png"
-                                style="height: 44px; object-fit:contain; border-radius: 5px;"></div2>
+                        <icon onclick="location.href='index.php';"><img src="images/Square_logo-transparant.png"
+                                style="height: 44px; object-fit:contain; border-radius: 5px;"></icon>
                         <div>
                             <form action="searchpage.php?searching=true" method="POST">
                                 <input type="text" name="searchcategory" value=""
@@ -72,8 +72,8 @@ session_start();
                         }
                         ?>
 
-                        <div2 onclick="location.href='winkelwagen.php';"><img src="images/Winkelwagen-transparant.png"
-                                style="height: 44px; object-fit:contain; border-radius: 5px;"></div2>
+                        <icon onclick="location.href='winkelwagen.php';"><img src="images/Winkelwagen-transparant.png"
+                                style="height: 44px; object-fit:contain; border-radius: 5px;"></icon>
                     </nav>
                 </div>
             </center>
