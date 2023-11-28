@@ -7,16 +7,7 @@
     <?php
     if (isset($_GET['product_name'])) {
       $productName = $_GET['product_name'];
-
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $database = "nerdy_gadgets_start";
-      $conn = new mysqli($servername, $username, $password, $database);
-
-      if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-      }
+      include "db_connection.php";
 
       $sql = "SELECT * FROM product WHERE name = '$productName'";
       $result = $conn->query($sql);
@@ -29,7 +20,6 @@
           echo "Product not found.";
       }
 
-      $conn->close();
   } else {
       echo "Product name not specified.";
   }
@@ -83,17 +73,6 @@
                 
                 if (isset($_GET['product_name'])) {
                     $productName = $_GET['product_name'];
-            
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $database = "nerdy_gadgets_start";
-                    $conn = new mysqli($servername, $username, $password, $database);
-
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                    }
-
                     $sql = "SELECT * FROM product WHERE name = '$productName'";
                     $result = $conn->query($sql);
 
@@ -119,7 +98,6 @@
                         echo "Product not found.";
                     }
 
-                    $conn->close();
                 } else {
                     echo "Product name not specified.";
                 }
@@ -131,15 +109,6 @@
     <section class="producten">
     <h2 class="producten-h2">Gerelateerde Producten</h2>
     <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "nerdy_gadgets_start";
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
 
     $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag') ORDER BY RAND() LIMIT 3";
     $resultRelated = $conn->query($sqlRelated);
@@ -164,7 +133,6 @@
         echo "Geen resultaten gevonden";
     }
 
-    $conn->close();
     ?>
 </section>
 
@@ -175,16 +143,6 @@
             <a href='leave_review.php?product_name=<?php echo urlencode($productName); ?>' class='link-producten2'>Leave a Review</a>
 
             <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "nerdy_gadgets_start";
-            $conn = new mysqli($servername, $username, $password, $database);
-
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-
             $productName = $_GET['product_name'];
             $sqlReviews = "SELECT * FROM product_reviews WHERE product_name = '$productName'";
             $resultReviews = $conn->query($sqlReviews);

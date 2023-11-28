@@ -18,8 +18,8 @@ session_start();
     </style>
 </head>
 
-<body>
-    <section>
+<body style="background-color: white;">
+    <section class="bar">
         <center>
             <div>
                 <nav class="nav_bar">
