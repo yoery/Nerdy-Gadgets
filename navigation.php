@@ -47,7 +47,7 @@ session_start();
                         <icon onclick="location.href='index.php';"><img src="images/Square_logo-transparant.png"
                                 style="height: 44px; object-fit:contain; border-radius: 5px;"></icon>
                         <div>
-                            <form action="searchpage.php?searching=true" method="POST">
+                            <form action="backup%20searchpage.php?searching=true" method="POST">
                                 <input type="text" name="searchcategory" value=""
                                     style="
                                     object-fit:contain;
