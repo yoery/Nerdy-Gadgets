@@ -110,7 +110,7 @@
     <h2 class="producten-h2">Gerelateerde Producten</h2>
     <?php
 
-    $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag') ORDER BY RAND() LIMIT 3";
+    $sqlRelated = "SELECT * FROM product WHERE category IN ('phones', 'laptops', 'opslag', 'routers', 'componenten', 'desktops') ORDER BY RAND() LIMIT 3";
     $resultRelated = $conn->query($sqlRelated);
 
     if ($resultRelated->num_rows > 0) {

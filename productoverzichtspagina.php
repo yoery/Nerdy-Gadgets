@@ -144,6 +144,9 @@
             <option value="laptops">Laptops</option>
             <option value="phones">Phones</option>
             <option value="opslag">Opslag</option>
+            <option value="routers">Routers</option>
+            <option value="componenten">Componenten</option>
+            <option value="desktops">Desktops</option>
         </select>
     </div>
 
