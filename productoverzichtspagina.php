@@ -27,12 +27,12 @@
         }
 
         .producten {
-            width: 95%;
+            width: 1500px;
             margin-top: 20px;
             border-radius: 10px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: flex-start;
             background-color: #cfcfdc;
         }

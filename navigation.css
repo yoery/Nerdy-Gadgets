@@ -47,7 +47,7 @@ body {
   margin-left: 20%;
 }
 
-.nav_bar search:nth-child(2) {
+.nav_bar div:nth-child(2) {
   margin-left: 10%;
 }
 
@@ -65,17 +65,6 @@ body {
   background-color: #3d3d54;
 }
 
-.nav_bar search {
-  color: white;
-  width: 100%;
-  box-shadow: 0 5px 10px -5px black;
-  cursor: pointer;
-  /* background: #23232f; */
-  transition: all 0.5s ease;
-  border-radius: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
 
 @media screen and (max-width: 768px) {
   .nav_bar {

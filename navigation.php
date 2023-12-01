@@ -46,7 +46,7 @@ session_start();
                     <nav class="nav_bar">
                         <icon onclick="location.href='index.php';"><img src="images/Square_logo-transparant.png"
                                 style="height: 44px; object-fit:contain; border-radius: 5px;"></icon>
-                        <search>
+                        <div>
                             <form action="backup%20searchpage.php?searching=true" method="POST">
                                 <input type="text" name="searchcategory" value=" "
                                     style="
@@ -59,7 +59,7 @@ session_start();
                                 <!--    <input type="image" src="images/search.png" alt="submit" height="40px" width="40px"
                                    style="filter: invert(1);">  -->
                             </form>
-                        </search>
+                        </div>
                         <div onclick="location.href='productoverzichtspagina.php';">Producten</div>
 
                         <?php
