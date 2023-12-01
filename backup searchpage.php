@@ -161,103 +161,106 @@
         </select>
     </div>
 
-    <?php
-    include "db_connection.php";
-    $sortOption = isset($_GET['sort']) ? $_GET['sort'] : 'name_asc';
-    $category = isset($_GET['category']) ? $_GET['category'] : 'alle';
+    <section class="producten">
 
-    $sql = "SELECT name, description, price, image FROM product";
-    if ($category !== 'alle') {
-        $sql .= " WHERE category = '$category'";
-    }
-    switch ($sortOption) {
-        case 'name_asc':
-            $sql .= " ORDER BY name ASC";
-            break;
-        case 'name_desc':
-            $sql .= " ORDER BY name DESC";
-            break;
-        case 'price_asc':
-            $sql .= " ORDER BY price ASC";
-            break;
-        case 'price_desc':
-            $sql .= " ORDER BY price DESC";
-            break;
-    }
-    //    $sql=$conn->prepare('SELECT name, description, price, image FROM product WHERE name=:category');
-    //    $sql->execute(array(':category'=>$_REQUEST['searchcategory']));
-    //
-    //    while($row=$sql->fetch()){
-    //        echo "<tr><td>$row[name]</td><td>$row[price]</td><td>$row[category]</td><tr/>";
-    //    }
-    if (isset($_POST['searchcategory'])){
-        $connection = mysqli_connect("localhost", "root", "", "nerdy_gadgets_start");
-        $filtervalue = $_POST['searchcategory'];
-        $filterdata = "SELECT * FROM product WHERE lower(name) LIKE LOWER('%$filtervalue%')";
-        $filterdata_run = mysqli_query($connection, $filterdata);
-        $imagePath = '/Nerdy-Gadgets/product_images/';
-        if (mysqli_num_rows($filterdata_run) > 0)
-        {
+        <?php
+        include "db_connection.php";
+        $sortOption = isset($_GET['sort']) ? $_GET['sort'] : 'name_asc';
+        $category = isset($_GET['category']) ? $_GET['category'] : 'alle';
 
-            foreach ($filterdata_run as $data)
+        $sql = "SELECT name, description, price, image FROM product";
+        if ($category !== 'alle') {
+            $sql .= " WHERE category = '$category'";
+        }
+        switch ($sortOption) {
+            case 'name_asc':
+                $sql .= " ORDER BY name ASC";
+                break;
+            case 'name_desc':
+                $sql .= " ORDER BY name DESC";
+                break;
+            case 'price_asc':
+                $sql .= " ORDER BY price ASC";
+                break;
+            case 'price_desc':
+                $sql .= " ORDER BY price DESC";
+                break;
+        }
+        //    $sql=$conn->prepare('SELECT name, description, price, image FROM product WHERE name=:category');
+        //    $sql->execute(array(':category'=>$_REQUEST['searchcategory']));
+        //
+        //    while($row=$sql->fetch()){
+        //        echo "<tr><td>$row[name]</td><td>$row[price]</td><td>$row[category]</td><tr/>";
+        //    }
+        if (isset($_POST['searchcategory'])){
+            $filtervalue = $_POST['searchcategory'];
+            $filterdata = "SELECT * FROM product WHERE lower(name) LIKE LOWER('%$filtervalue%')";
+            $filterdata_run = mysqli_query($conn, $filterdata);
+            $imagePath = '/Nerdy-Gadgets/product_images/';
+            if (mysqli_num_rows($filterdata_run) > 0)
             {
-                $image = $data['image'];
-                $shortName = substr($data['name'],0,30);
-                $shortDescription = substr($data['description'],0,200);
 
-                echo "<div class='product-info'>";
-                echo "<img src='$imagePath/$image.jpg' alt='Productafbeelding' class='img-producten'>";
-                echo "<h2 class='h3-producten'>" . $shortName . " <a href='#' onclick='redirectToProduct(\"{$data["name"]}\")'>...</a></h2>";
-                echo "<p class='p-producten'>" . $shortDescription . " <a href='#' onclick='redirectToProduct(\"{$data["name"]}\")'>Lees meer</a></p>";
-                echo "<p class='h2-producten'>Price: €" . $data["price"] . "</p>";
-                echo "<button type='button' class='link-producten2' onclick='redirectToProduct(\"{$data["name"]}\")'> More info</button>";
-                echo "<button type='button' class='link-producten' onclick='addToCart(\"{$data["name"]}\", {$data["price"]})'>Voeg toe aan winkelwagen</button>";
-                echo "</div>";
+                foreach ($filterdata_run as $data)
+                {
+                    $image = $data['image'];
+                    $shortName = substr($data['name'],0,30);
+                    $shortDescription = substr($data['description'],0,200);
 
-                ?>
-                <script>
-                    function sortProducts(option) {
-                        window.location.href = "?sort=" + option + "&category=" + document.getElementById("category").value;
-                    }
+                    echo "<div class='product-info'>";
+                    echo "<img src='$imagePath/$image.jpg' alt='Productafbeelding' class='img-producten'>";
+                    echo "<h2 class='h3-producten'>" . $shortName . " <a href='#' onclick='redirectToProduct(\"{$data["name"]}\")'>...</a></h2>";
+                    echo "<p class='p-producten'>" . $shortDescription . " <a href='#' onclick='redirectToProduct(\"{$data["name"]}\")'>Lees meer</a></p>";
+                    echo "<p class='h2-producten'>Price: €" . $data["price"] . "</p>";
+                    echo "<button type='button' class='link-producten2' onclick='redirectToProduct(\"{$data["name"]}\")'> More info</button>";
+                    echo "<button type='button' class='link-producten' onclick='addToCart(\"{$data["name"]}\", {$data["price"]})'>Voeg toe aan winkelwagen</button>";
+                    echo "</div>";
 
-                    function filterProducts(category) {
-                        window.location.href = "?sort=" + document.getElementById("sort").value + "&category=" + category;
-                    }
+                    ?>
 
-                    function addToCart(productName, productPrice) {
-                        var quantity = prompt("Enter quantity:", 1);
-
-                        if (quantity === null || isNaN(quantity) || quantity <= 0) {
-                            alert("Invalid quantity.");
-                            return;
+                    <script>
+                        function sortProducts(option) {
+                            window.location.href = "?sort=" + option + "&category=" + document.getElementById("category").value;
                         }
 
-                        const xhr = new XMLHttpRequest();
-                        xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
-                        xhr.onload = function () {
-                            if (xhr.status === 200) {
-                                alert(xhr.responseText);
-                            } else {
-                                alert("Error adding to cart.");
+                        function filterProducts(category) {
+                            window.location.href = "?sort=" + document.getElementById("sort").value + "&category=" + category;
+                        }
+
+                        function addToCart(productName, productPrice) {
+                            var quantity = prompt("Enter quantity:", 1);
+
+                            if (quantity === null || isNaN(quantity) || quantity <= 0) {
+                                alert("Invalid quantity.");
+                                return;
                             }
-                        };
-                        xhr.send();
-                    }
 
-                    function redirectToProduct(productName) {
-                        window.location.href = "productpagina.php?product_name=" + encodeURIComponent(productName);
-                    }
+                            const xhr = new XMLHttpRequest();
+                            xhr.open("GET", `addToCart.php?productName=${encodeURIComponent(productName)}&productPrice=${productPrice}&quantity=${quantity}`, true);
+                            xhr.onload = function () {
+                                if (xhr.status === 200) {
+                                    alert(xhr.responseText);
+                                } else {
+                                    alert("Error adding to cart.");
+                                }
+                            };
+                            xhr.send();
+                        }
 
-                </script>
-    <?php
+                        function redirectToProduct(productName) {
+                            window.location.href = "productpagina.php?product_name=" + encodeURIComponent(productName);
+                        }
 
+                    </script>
+                    <?php
+
+                }
+            }
+            else{
+                echo"<h1>no results</h1>";
             }
         }
-        else{
-            echo"<h1>no results</h1>";
-        }
-    }
-    ?>
+        ?>
+    </section>
 
 </center>
 

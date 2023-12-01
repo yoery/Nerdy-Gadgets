@@ -55,6 +55,8 @@
     //    while($row=$sql->fetch()){
     //        echo "<tr><td>$row[name]</td><td>$row[price]</td><td>$row[category]</td><tr/>";
     //    }
+    $search = $_POST['searchcategory'];
+
     if (isset($_POST['searchcategory'])){
         $connection = mysqli_connect("localhost", "root", "", "nerdy_gadgets_start");
         $filtervalue = $_POST['searchcategory'];

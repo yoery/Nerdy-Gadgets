@@ -48,7 +48,7 @@ session_start();
                                 style="height: 44px; object-fit:contain; border-radius: 5px;"></icon>
                         <div>
                             <form action="backup%20searchpage.php?searching=true" method="POST">
-                                <input type="text" name="searchcategory" value=""
+                                <input type="text" name="searchcategory" value=" "
                                     style="
                                     object-fit:contain;
                                     height: 45px;
