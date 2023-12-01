@@ -40,7 +40,7 @@ session_start();
 
 <body>
     <section class="background" style="background-color: #23232f; padding:20px">
-        <section class="nav_bar_background" style="">
+        <section class="nav_bar_background">
             <center>
                 <div>
                     <nav class="nav_bar">
