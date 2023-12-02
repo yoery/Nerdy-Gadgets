@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <?php include 'navigation.php'; ?>
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productoverzicht</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         .section-logo {
             width: auto;
@@ -114,7 +114,6 @@
 </head>
 
 <body class="body" style="background-color: #23232f">
-<?php include 'navigation.php'; ?>
 
 <section class="section-logo">
     <center style="text-align: center;">

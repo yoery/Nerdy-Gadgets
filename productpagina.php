@@ -1,9 +1,10 @@
 <!DOCTYPE html> 
 <html lang="en">
+    <?php include 'navigation.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <?php
     if (isset($_GET['product_name'])) {
       $productName = $_GET['product_name'];
@@ -57,7 +58,6 @@
     </style>
 </head>
 <body>
-    <?php include 'navigation.php'; ?>
 
     <section class="section-logo">
         <center>
