@@ -9,7 +9,6 @@ include 'navigation.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerdy Gadgets</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             background-color: #23232f;

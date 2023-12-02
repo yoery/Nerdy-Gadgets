@@ -7,6 +7,7 @@ session_start();
 <head>
     <link rel="stylesheet" type="text/css" media="screen" href="navigation.css" />
     <link rel="stylesheet" href="searchbar.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         .nav_bar {
             position: relative;
