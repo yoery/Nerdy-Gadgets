@@ -59,9 +59,29 @@
         .h3-producten1 {color: white;}
         .p-producten1 {color: white;}
         .h2-producten2 {color: white; padding: 5px;}
-        .link-producten1 {display: block; text-align: center; background-color: green; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
-        .link-producten2 {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
-
+        .link-producten1 {            display: block;
+            text-align: center;
+            background-color: #cfcfdc;
+            color:black;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 1px;}
+        .link-producten2 {            display: block;
+            text-align: center;
+            background-color: #cfcfdc;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1px;}
+            .link-producten1:hover {
+            transition: all 0.5s ease;
+            background-color: #3d3d54;
+        }
+        .link-producten2:hover {
+            transition: all 0.5s ease;
+            background-color: #3d3d54;
+        }
         .section-footer {width: 900px; height: 50px; margin-top: 50px;}
         .h6-footer {color: white;}
 
@@ -163,7 +183,7 @@
 
     <center>
         <section class="section-footer">
-            <h6 class="h6-footer">@Nerdy gadget 2023</h6>
+            <h6 class="h6-footer">@Nerdy-Gadgets 2023</h6>
         </section>
     </center>
     <script>
