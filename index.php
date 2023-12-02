@@ -137,6 +137,7 @@ include 'navigation.php';
         .img-ervaring {
             width: 75px;
             height: 75px;
+            object-fit: contain;
         }
 
         .h3-ervaring {
@@ -310,19 +311,19 @@ include 'navigation.php';
             <h2 class="h2-ervaring">Winkelervaring bij Nerdy Gadgets</h2>
 
             <div class="div-ervaring">
-                <img src="images/navigatie.png" class="img-ervaring">
+                <img src="images/navigatie2.png" class="img-ervaring">
                 <h3 class="h3-ervaring">Eenvoudige Navigatie</h3>
                 <p class="p-ervaring">Vind gemakkelijk de gadgets die je zoekt met onze intuïtieve navigatie.</p>
             </div>
 
             <div class="div-ervaring">
-                <img src="images/betaling.png" class="img-ervaring">
+                <img src="images/betaling2.png" class="img-ervaring">
                 <h3 class="h3-ervaring">Veilige Betaling</h3>
                 <p class="p-ervaring">Betaal met vertrouwen dankzij onze veilige betalingsmethoden.</p>
             </div>
 
             <div class="div-ervaring">
-                <img src="images/snelle-levering.png" class="img-ervaring">
+                <img src="images/levering2.png" class="img-ervaring">
                 <h3 class="h3-ervaring">Snelle Levering</h3>
                 <p class="p-ervaring">Ontvang je bestelling snel en efficiënt, zodat je snel kunt genieten van je
                     gadgets.</p>
