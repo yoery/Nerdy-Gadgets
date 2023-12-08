@@ -26,6 +26,7 @@
   }
     ?>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="productpagina.css">
     <style>
         .section-logo {width: auto; height: 800; position: center;}
         .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}

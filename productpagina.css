@@ -1,0 +1,28 @@
+.section-logo {width: auto; height: 800; position: center;}
+        .img-logo {width: 800px; height: 260px; margin-top: 50px; border-radius: 10px;}
+        .h4-logo {color: black; margin-top: 10px;}
+
+        .section-product {width: 1100px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);overflow: hidden;}
+        .container {color: black;}
+        .product-container {width: 600px; margin: 0 auto; color: black; min-height: 850px;}
+        .product-image {float: left; height: 450px; width: 380px; margin-top: 30px;}
+        .img-producten {max-width: 100%; height: auto;}
+        .product-details {float: right; color: black; width: 650px; text-align: center; margin-top: -110px;}
+        .h2-product {color: black; float: both; padding: 150px; display: flex; flex-direction: column; align-items: center;}
+        .href-product {display: block; text-align: center; background-color: limegreen; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 10px; width: 200px;}
+
+        .section-reviews {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; width: 1200px; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .product-reviews {margin-top: 20px; color: black;}
+        .review-author {display: inline-block; margin: 20px; height: 250px; width: 550px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-top: 20px;}
+        .review-content {float: left; width:  400px; color: black;}
+        .avatar {vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;}
+
+        .producten {display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; width: 1400px; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .producten-h2 {text-align: center; width: 100%; margin-bottom: 10px;}
+        .product-info1 {width: 400px; height: 450px; margin: 20px; padding: 10px; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-sizing: border-box; text-align: center;}
+        .img-producten1 {width: 260px; height: 100px; object-fit: contain; padding: 5px; margin: 0 auto;}
+        .h3-producten1 {color: black;}
+        .p-producten1 {color: black;}
+        .h2-producten1 {color: black; padding: 5px;}
+        .link-producten1 {display: block; text-align: center; background-color: green; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}
+        .link-producten2 {display: block; text-align: center; background-color: #007bff; color: black; text-decoration: none; padding: 5px; border-radius: 5px; margin-top: 1px; margin: 10px auto;}

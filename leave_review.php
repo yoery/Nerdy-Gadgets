@@ -9,7 +9,7 @@
     <style>
         body {font-family: 'Arial', sans-serif; background-color: #f8f9fa;}
 
-        .section-reviews {width: 1000px; height: 400px; margin-top: 100px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+        .section-reviews {width: 1000px; height: auto; margin-top: 100px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
         .product-reviews {text-align: center;}
 
